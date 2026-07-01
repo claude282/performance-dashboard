@@ -396,7 +396,6 @@
     <button class="tab-btn" onclick="showTab('detailed',this)">🔍 Detailed Data</button>
     <button class="tab-btn" onclick="showTab('ofsted',this)">💬 Ofsted Narrative</button>
     <button class="tab-btn" onclick="showTab('attendance',this)">📅 Attendance</button>
-    <button class="tab-btn" onclick="showTab('similar',this)">🏫 Similar Schools</button>
     <button class="tab-btn" onclick="showTab('inclusion',this)">🤝 Inclusion</button>
     <button class="tab-btn" onclick="showTab('mobility',this)">🔄 Pupil Mobility</button>
     <button class="tab-btn" onclick="showTab('send',this)">♿ SEND</button>
@@ -404,7 +403,6 @@
     <button class="tab-btn" onclick="showTab('sdp',this)">🏫 Dev Plan</button>
     <button class="tab-btn" onclick="showTab('teaching',this)">📚 Teaching &amp; Learning</button>
     <button class="tab-btn" onclick="showTab('disadvantaged',this)">💙 Disadvantaged</button>
-    <button class="tab-btn" onclick="showTab('destinations',this)">🎓 Destinations &amp; Careers</button>
     <button class="tab-btn" onclick="showTab('pd',this)">🌟 PD &amp; Well-being</button>
     <button class="tab-btn" onclick="showTab('yeargroups',this)">📋 Year Group Summary</button>
   </nav>
@@ -882,345 +880,192 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!-- ATTENDANCE TAB                                 -->
   <!-- ═══════════════════════════════════════════════ -->
-  <div class="tab-panel" id="tab-attendance" data-print-title="📅 Attendance — DfE Data & Similar Schools">
+  <div class="tab-panel" id="tab-attendance" data-print-title="📅 Attendance — IDSR Data">
 
     <div class="idsr-note">
       <span>📋</span>
-      <div>Source: DfE Monitor Your School Attendance &amp; Similar Schools Comparison Reports (Nov 2024 – Jun 2026). All pupil group data covers Years 7–11 only. National averages are for mainstream secondary schools in England. Similar schools = 20 schools matched by DfE on FSM, SEN, IDACI deprivation, region, EAL and funding.</div>
+      <div>Source: Ofsted IDSR June 2026, drawing on the DfE's 2025/26 daily attendance collection (to spring part 2) and the 'Pupil absence in schools in England' statistical release series (2022/23, 2023/24, 2024/25, plus 2018/19 pre-pandemic baseline). Compulsory-age pupils only.</div>
     </div>
 
     <!-- CURRENT YEAR HEADLINE -->
     <div class="section">
-      <div class="section-title">📅 Current Year Attendance — To 12 June 2026</div>
-      <div class="section-sub">Source: DfE View School Attendance Data · 1,091 pupils · Data updated to 12/06/2026</div>
+      <div class="section-title">📅 Current Year Attendance — 2025/26 (4 half terms)</div>
+      <div class="section-sub">Source: DfE 2025/26 daily attendance collection, as reported in the IDSR</div>
 
       <div class="metrics-grid">
-        <div class="metric-card mc-green">
-          <div class="metric-label">Overall Attendance</div>
-          <div class="metric-value mv-green">93.2%</div>
-          <div class="metric-plain-label mpl-green">Above national average</div>
-          <div class="metric-vs">National secondary avg: 92.1%</div>
-          <div class="metric-idsr">Ranked 2nd of 21 similar schools (Autumn 2025/26)</div>
-        </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Overall Absence</div>
-          <div class="metric-value mv-green">6.8%</div>
-          <div class="metric-plain-label mpl-green">Improving year-on-year</div>
-          <div class="metric-vs">2024/25 full year: 7.2%</div>
-          <div class="metric-idsr">Improvement: −0.4pp vs prior year</div>
-        </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Unauthorised Absence</div>
-          <div class="metric-value mv-green">5.1%</div>
-          <div class="metric-plain-label mpl-blue">In line with national</div>
-          <div class="metric-vs">2024/25 full year: 5.7%</div>
-          <div class="metric-idsr">Improvement: −0.6pp vs prior year</div>
+        <div class="metric-card mc-blue">
+          <div class="metric-label">All Pupils Attendance</div>
+          <div class="metric-value mv-blue">94.2%</div>
+          <div class="metric-plain-label mpl-blue">Close to national average</div>
+          <div class="metric-vs">National: 94.9% &nbsp;|&nbsp; Cohort: 366</div>
+          <div class="metric-idsr">IDSR: Close to average</div>
         </div>
         <div class="metric-card mc-blue">
-          <div class="metric-label">Persistently Absent</div>
-          <div class="metric-value mv-blue">19.0%</div>
-          <div class="metric-plain-label mpl-blue">207 pupils (PA ≥10%)</div>
-          <div class="metric-vs">Similar schools median: 25.7%</div>
-          <div class="metric-idsr">Ranked 3rd of 21 similar schools</div>
+          <div class="metric-label">FSM Pupils Attendance</div>
+          <div class="metric-value mv-blue">92.2%</div>
+          <div class="metric-plain-label mpl-blue">In line with national</div>
+          <div class="metric-vs">National: 92.2% &nbsp;|&nbsp; Cohort: 175</div>
+          <div class="metric-idsr">IDSR: Close to average</div>
         </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Severely Absent</div>
-          <div class="metric-value mv-green">1.8%</div>
-          <div class="metric-plain-label mpl-green">20 pupils (SA ≥50%)</div>
-          <div class="metric-vs">Last 5 days attendance: 95.6%</div>
-          <div class="metric-idsr">Positive end-of-year momentum</div>
+        <div class="metric-card mc-blue">
+          <div class="metric-label">SEN Pupils Attendance</div>
+          <div class="metric-value mv-blue">92.7%</div>
+          <div class="metric-plain-label mpl-blue">Close to national average</div>
+          <div class="metric-vs">National: 92.3% &nbsp;|&nbsp; Cohort: 101</div>
+          <div class="metric-idsr">IDSR: Close to average</div>
         </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Exceeds ABIE</div>
-          <div class="metric-value mv-green">✓</div>
-          <div class="metric-plain-label mpl-green">Above baseline expectation</div>
-          <div class="metric-vs">ABIE: 92.8% · Current: 93.2%</div>
-          <div class="metric-idsr">+0.4pp above the DfE minimum improvement target</div>
+        <div class="metric-card mc-amber">
+          <div class="metric-label">Persistent Absence (2024/25)</div>
+          <div class="metric-value mv-amber">23.5%</div>
+          <div class="metric-plain-label mpl-amber">Above national — priority area</div>
+          <div class="metric-vs">National: 13.0% &nbsp;|&nbsp; Gap: +10.5pp</div>
+          <div class="metric-idsr">IDSR: Above (sig+) — 3rd consecutive year</div>
+        </div>
+        <div class="metric-card mc-amber">
+          <div class="metric-label">Overall Absence (2024/25)</div>
+          <div class="metric-value mv-amber">7.2%</div>
+          <div class="metric-plain-label mpl-amber">Above national average</div>
+          <div class="metric-vs">National: 5.2% &nbsp;|&nbsp; Compared: Above</div>
+          <div class="metric-idsr">Report card measure — trend worsening since 2018/19 (4.6%)</div>
+        </div>
+        <div class="metric-card mc-blue">
+          <div class="metric-label">Total Pupils on Roll (2025)</div>
+          <div class="metric-value mv-blue">423</div>
+          <div class="metric-plain-label mpl-blue">Above average roll size</div>
+          <div class="metric-vs">School capacity: 420</div>
+          <div class="metric-idsr">Report card: above average</div>
         </div>
       </div>
     </div>
 
-    <!-- SIMILAR SCHOOLS RANKING -->
+    <!-- 3-YEAR OVERALL ATTENDANCE TREND -->
     <div class="section">
-      <div class="section-title">🏆 Similar Schools Ranking — DfE Report (Autumn 2025/26)</div>
-      <div class="section-sub">Herringham compared to 20 DfE-matched similar schools · Full Autumn Term 2025/26 · Published January 2026</div>
-
-      <div class="pct-grid">
-        <div class="pct-card pc-green">
-          <div class="pct-label">Overall Attendance Rank</div>
-          <div class="pct-value pv-green">2nd</div>
-          <div class="pct-suffix">of 21 schools</div>
-          <div class="pct-context">92.9% vs similar schools median 90.9%. 19 schools have lower overall attendance than Herringham.</div>
-        </div>
-        <div class="pct-card pc-blue">
-          <div class="pct-label">Persistent Absence Rank</div>
-          <div class="pct-value pv-blue">3rd</div>
-          <div class="pct-suffix">of 21 schools</div>
-          <div class="pct-context">PA of 23.1% vs similar schools median 25.7%. 18 similar schools have a higher PA rate.</div>
-        </div>
-        <div class="pct-card pc-green">
-          <div class="pct-label">SEN Attendance Rank</div>
-          <div class="pct-value pv-green">1st</div>
-          <div class="pct-suffix">of 21 schools</div>
-          <div class="pct-context">SEN attendance 90.6% vs similar schools median 84.3% — higher than all 20 similar schools. Rated DfE Relative Strength.</div>
-        </div>
-        <div class="pct-card pc-green">
-          <div class="pct-label">Areas to Focus On</div>
-          <div class="pct-value pv-green">0</div>
-          <div class="pct-suffix">Autumn 2025/26</div>
-          <div class="pct-context">"Your school's attendance is consistently higher than similar schools." Most schools receive 3 areas to focus on.</div>
-        </div>
-      </div>
-
-      <div class="info-box ib-green">
-        <strong>DfE areas of relative strength (Autumn 2025/26):</strong> (1) SEN attendance 90.6% — higher than <em>all 20</em> similar schools. (2) Thursday morning attendance 93.5% — higher than 20 out of 20 similar schools. (3) Monday morning attendance 93.0% — higher than 19 out of 20 similar schools. <strong>Zero areas to focus on</strong> — the DfE report states the school "consistently achieves higher attendance than similar schools."
-      </div>
-    </div>
-
-    <!-- PUPIL GROUP VS SIMILAR SCHOOLS -->
-    <div class="section">
-      <div class="section-title">Attendance by Pupil Group vs Similar Schools (Autumn 2025/26)</div>
-      <div class="section-sub">Year-to-date from start of 2025/26 to 22 December 2025 — compared to 20 DfE-matched similar schools</div>
+      <div class="section-title">📉 Overall Attendance — 3-Year Trend (with 2018/19 baseline)</div>
+      <div class="section-sub">Source: IDSR — 'Pupil absence in schools in England' series, 3-term academic year data. All figures are for compulsory school-age pupils.</div>
 
       <div class="data-table-wrap">
         <table class="data-table">
           <thead>
             <tr>
-              <th>Pupil Group</th>
-              <th>Herringham 2025/26</th>
-              <th>Similar Schools Median</th>
-              <th>Herringham vs Similar</th>
-              <th>Herringham 2024/25 (same period)</th>
+              <th>Year</th>
+              <th>All Pupils</th>
+              <th>FSM6</th>
+              <th>SEN</th>
+              <th>National (All Pupils)</th>
+              <th>National Distribution Banding</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">All Pupils</td>
-              <td class="mono fw-bold text-green">92.9%</td>
-              <td class="mono text-muted">90.9%</td>
-              <td class="fw-bold text-green">+2.0pp</td>
-              <td class="mono text-muted">92.9%</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Pupils with FSM</td>
-              <td class="mono fw-bold text-green">90.7%</td>
-              <td class="mono text-muted">87.0%</td>
-              <td class="fw-bold text-green">+3.7pp</td>
-              <td class="mono text-muted">89.9%</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Pupils without FSM</td>
-              <td class="mono fw-bold text-green">94.5%</td>
-              <td class="mono text-muted">93.6%</td>
-              <td class="fw-bold text-green">+0.9pp</td>
-              <td class="mono text-muted">94.9%</td>
-            </tr>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">Pupils with SEN ⭐</td>
-              <td class="mono fw-bold text-green">90.6%</td>
-              <td class="mono text-muted">84.3%</td>
-              <td class="fw-bold text-green">+6.3pp — #1 of 21</td>
-              <td class="mono text-muted">90.9%</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Pupils without SEN</td>
-              <td class="mono fw-bold text-green">93.5%</td>
-              <td class="mono text-muted">92.6%</td>
-              <td class="fw-bold text-green">+0.9pp</td>
-              <td class="mono text-muted">93.3%</td>
-            </tr>
+            <tr><td class="fw-bold">2018/19 (pre-pandemic)</td><td class="mono">95.4%</td><td class="mono">94.5%</td><td class="mono">94.8%</td><td class="mono text-muted">96.0%</td><td><span class="tag tag-amber">Below</span></td></tr>
+            <tr><td class="fw-bold">2022/23</td><td class="mono">93.6%</td><td class="mono">91.9%</td><td class="mono">92.6%</td><td class="mono text-muted">94.1%</td><td><span class="tag tag-slate">Close to average</span></td></tr>
+            <tr><td class="fw-bold">2023/24</td><td class="mono">93.5%</td><td class="mono">91.2%</td><td class="mono">91.6%</td><td class="mono text-muted">94.5%</td><td><span class="tag tag-amber">Below</span></td></tr>
+            <tr class="row-highlight"><td class="fw-bold text-navy">2024/25</td><td class="mono fw-bold text-amber">92.8%</td><td class="mono fw-bold text-amber">90.3%</td><td class="mono fw-bold text-amber">89.7%</td><td class="mono text-muted">94.8%</td><td><span class="tag tag-amber">Below</span></td></tr>
           </tbody>
         </table>
       </div>
 
-      <div class="info-box ib-green">
-        <strong>SEN attendance — inclusion indicator:</strong> Herringham's SEN pupils attend at 90.6% — 6.3 percentage points above the similar schools median of 84.3%. This is higher than all 20 similar schools and has been rated a DfE "Relative Strength" for two consecutive reporting periods. Under Ofsted's new framework, this is direct evidence of effective inclusive practice and a school where vulnerable pupils feel safe and valued.
-      </div>
-    </div>
-
-    <!-- TERM BY TERM COMPARISON -->
-    <div class="section">
-      <div class="section-title">Year-on-Year Term Comparison 2024/25 vs 2025/26</div>
-      <div class="section-sub">Source: DfE View School Attendance Data (viewyourdata.education.gov.uk) — all pupils Years 7–11</div>
-
-      <div class="data-table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Term</th>
-              <th>Attendance 2024/25</th>
-              <th>Attendance 2025/26</th>
-              <th>Change</th>
-              <th>Absence 2024/25</th>
-              <th>Absence 2025/26</th>
-              <th>Unauth. Absence 2025/26</th>
-              <th>Trend</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="fw-bold">Autumn Term</td>
-              <td class="mono">93.0%</td>
-              <td class="mono fw-bold text-blue">92.9%</td>
-              <td class="text-amber fw-bold">−0.1pp</td>
-              <td class="mono text-muted">7.0%</td>
-              <td class="mono text-blue">7.1%</td>
-              <td class="mono">5.5%</td>
-              <td><span class="tag tag-amber">↓ slight</span></td>
-            </tr>
-            <tr class="row-highlight">
-              <td class="fw-bold">Spring Term</td>
-              <td class="mono">92.4%</td>
-              <td class="mono fw-bold text-green">93.2%</td>
-              <td class="text-green fw-bold">+0.8pp</td>
-              <td class="mono text-muted">7.6%</td>
-              <td class="mono text-green">6.8%</td>
-              <td class="mono text-green">5.0%</td>
-              <td><span class="tag tag-green">↑ improved</span></td>
-            </tr>
-            <tr class="row-highlight">
-              <td class="fw-bold">Summer Term</td>
-              <td class="mono">93.1%</td>
-              <td class="mono fw-bold text-green">93.8%</td>
-              <td class="text-green fw-bold">+0.7pp</td>
-              <td class="mono text-muted">6.9%</td>
-              <td class="mono text-green">6.2%</td>
-              <td class="mono text-green">4.3%</td>
-              <td><span class="tag tag-green">↑ improved</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Full Year</td>
-              <td class="mono">92.8%</td>
-              <td class="mono fw-bold text-green">93.2%</td>
-              <td class="text-green fw-bold">+0.4pp</td>
-              <td class="mono text-muted">7.2%</td>
-              <td class="mono text-green">6.8%</td>
-              <td class="mono text-green">5.1%</td>
-              <td><span class="tag tag-green">↑ improved</span></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="info-box ib-amber">
+        <strong>Trend note:</strong> Overall attendance has declined each year since 2018/19 and remains below the national average for all three pupil groups shown. SEN pupil attendance (89.7% in 2024/25) has fallen the furthest — 2.6 percentage points below the national SEN average of 92.3%. All three groups sit in the school's "High-FSM" context throughout this period.
       </div>
 
       <div class="charts-grid">
         <div class="chart-card">
-          <div class="chart-card-title">Attendance Term Comparison — 2024/25 vs 2025/26</div>
-          <div class="chart-card-sub">Full year, Spring and Summer terms all show improvement</div>
+          <div class="chart-card-title">Overall Attendance — All Pupils vs National</div>
+          <div class="chart-card-sub">2018/19 pre-pandemic baseline to 2024/25</div>
           <div class="chart-wrap"><canvas id="chartAttTerm"></canvas></div>
         </div>
         <div class="chart-card">
-          <div class="chart-card-title">Attendance vs Similar Schools — Autumn 2025/26</div>
-          <div class="chart-card-sub">By pupil group · Herringham vs similar schools median</div>
+          <div class="chart-card-title">Persistent Absence 2024/25 — All Pupils, FSM6 &amp; SEN</div>
+          <div class="chart-card-sub">School vs national, all rated Above (sig+) or close</div>
           <div class="chart-wrap"><canvas id="chartAttGroups"></canvas></div>
         </div>
       </div>
     </div>
 
-    <!-- DFE FIRST-HALF AUTUMN 24/25 PUPIL GROUP DATA -->
+    <!-- PERSISTENT ABSENCE 3-YEAR TREND -->
     <div class="section">
-      <div class="section-title">DfE Pupil Group Attendance — Full Autumn Term 2024/25</div>
-      <div class="section-sub">Source: DfE Monitor Your School Attendance Summary — Full Autumn Term (to 31 Dec 2024) · Years 7–11</div>
+      <div class="section-title">⚠️ Persistent Absence — 3-Year Trend (Priority Area)</div>
+      <div class="section-sub">Source: IDSR — persistent absence defined as 10%+ overall absence. Statistically significant vs national throughout.</div>
 
       <div class="data-table-wrap">
         <table class="data-table">
           <thead>
             <tr>
-              <th>Pupil Group</th>
-              <th>Herringham Autumn 2024/25</th>
-              <th>National Avg</th>
-              <th>vs National</th>
-              <th>Same period 2023/24</th>
+              <th>Year</th>
+              <th>All Pupils</th>
+              <th>FSM6</th>
+              <th>SEN</th>
+              <th>National (All Pupils)</th>
+              <th>IDSR Banding</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">All Pupils</td>
-              <td class="mono fw-bold text-green">92.8%</td>
-              <td class="mono text-muted">92.2%</td>
-              <td class="fw-bold text-green">+0.6pp</td>
-              <td class="mono">93.1%</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Pupils with FSM</td>
-              <td class="mono fw-bold text-green">89.9%</td>
-              <td class="mono text-muted">87.5%</td>
-              <td class="fw-bold text-green">+2.4pp</td>
-              <td class="mono">91.5%</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Pupils without FSM</td>
-              <td class="mono fw-bold text-green">94.8%</td>
-              <td class="mono text-muted">94.0%</td>
-              <td class="fw-bold text-green">+0.8pp</td>
-              <td class="mono">94.2%</td>
-            </tr>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">Pupils with SEN</td>
-              <td class="mono fw-bold text-green">90.9%</td>
-              <td class="mono text-muted">86.6%</td>
-              <td class="fw-bold text-green">+4.3pp</td>
-              <td class="mono">89.5%</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Pupils without SEN</td>
-              <td class="mono fw-bold text-blue">93.2%</td>
-              <td class="mono text-muted">93.4%</td>
-              <td class="text-amber fw-bold">−0.2pp</td>
-              <td class="mono">93.9%</td>
-            </tr>
+            <tr><td class="fw-bold">2018/19 (pre-pandemic)</td><td class="mono">10.9%</td><td class="mono">17.3%</td><td class="mono">13.5%</td><td class="mono text-muted">8.2%</td><td><span class="tag tag-slate">Above (non-sig)</span></td></tr>
+            <tr><td class="fw-bold">2022/23</td><td class="mono">20.6%</td><td class="mono">29.7%</td><td class="mono">23.7%</td><td class="mono text-muted">16.2%</td><td><span class="tag tag-red">Above (sig+)</span></td></tr>
+            <tr><td class="fw-bold">2023/24</td><td class="mono">22.3%</td><td class="mono">37.4%</td><td class="mono">36.7%</td><td class="mono text-muted">14.6%</td><td><span class="tag tag-red">Above (sig+)</span></td></tr>
+            <tr class="row-highlight"><td class="fw-bold text-navy">2024/25</td><td class="mono fw-bold text-red">23.5%</td><td class="mono fw-bold text-red">33.5%</td><td class="mono fw-bold text-red">36.3%</td><td class="mono text-muted">13.0%</td><td><span class="tag tag-red">Above (sig+)</span></td></tr>
           </tbody>
         </table>
       </div>
+
+      <div class="info-box ib-amber">
+        <strong>Priority for improvement:</strong> Persistent absence for all pupils has been statistically significantly above the national average (Above sig+) for three consecutive years, and has more than doubled since the 2018/19 pre-pandemic baseline (10.9% → 23.5%). SEN persistent absence (36.3% in 2024/25) is a particular concern, having risen sharply from 13.5% pre-pandemic. This is the single most important area of development identified in the IDSR and should be a core focus of the School Development Plan.
+      </div>
     </div>
 
-    <!-- ABSENCE BANDINGS BY YEAR GROUP -->
+    <!-- YEAR GROUP ABSENCE BANDS 2025/26 -->
     <div class="section">
-      <div class="section-title">Absence Bandings by Year Group — Autumn 2025/26</div>
-      <div class="section-sub">Percentage of pupils in each absence band · From start of 2025/26 to 22 December 2025 · Pupils with ≥20 possible sessions</div>
+      <div class="section-title">Absence Bandings by Year Group — 2025/26 (4 half terms)</div>
+      <div class="section-sub">Source: DfE 2025/26 daily attendance collection, as reported in the IDSR · Percentage of pupils in each overall absence band, by year group</div>
 
       <div class="data-table-wrap">
         <table class="data-table">
           <thead>
             <tr>
               <th>Absence Band</th>
-              <th>Year 7</th>
-              <th>Year 8</th>
-              <th>Year 9</th>
-              <th>Year 10</th>
-              <th>Year 11</th>
+              <th>Year 1</th>
+              <th>Year 2</th>
+              <th>Year 3</th>
+              <th>Year 4</th>
+              <th>Year 5</th>
+              <th>Year 6</th>
             </tr>
           </thead>
           <tbody>
             <tr style="background:#f0fdf4;">
               <td class="fw-bold text-green">Less than 5% (excellent)</td>
-              <td class="mono fw-bold text-green">64%</td>
-              <td class="mono fw-bold text-green">54%</td>
-              <td class="mono fw-bold text-green">51%</td>
+              <td class="mono fw-bold text-green">55%</td>
+              <td class="mono fw-bold text-green">73%</td>
+              <td class="mono fw-bold text-green">62%</td>
               <td class="mono fw-bold text-green">57%</td>
-              <td class="mono fw-bold text-green">54%</td>
+              <td class="mono fw-bold text-green">44%</td>
+              <td class="mono fw-bold text-green">75%</td>
             </tr>
             <tr>
-              <td class="fw-bold text-blue">5–10% (satisfactory)</td>
-              <td class="mono">22%</td>
-              <td class="mono">18%</td>
-              <td class="mono">23%</td>
+              <td class="fw-bold text-blue">5–10%</td>
+              <td class="mono">32%</td>
+              <td class="mono">15%</td>
               <td class="mono">21%</td>
-              <td class="mono">19%</td>
+              <td class="mono">25%</td>
+              <td class="mono">39%</td>
+              <td class="mono">18%</td>
             </tr>
             <tr style="background:var(--amber-light);">
               <td class="fw-bold text-amber">10%+ (persistently absent)</td>
-              <td class="mono text-amber fw-bold">14%</td>
-              <td class="mono text-amber fw-bold">28%</td>
-              <td class="mono text-amber fw-bold">26%</td>
-              <td class="mono text-amber fw-bold">23%</td>
-              <td class="mono text-amber fw-bold">27%</td>
+              <td class="mono text-amber fw-bold">13%</td>
+              <td class="mono text-amber fw-bold">13%</td>
+              <td class="mono text-amber fw-bold">16%</td>
+              <td class="mono text-amber fw-bold">18%</td>
+              <td class="mono text-amber fw-bold">16%</td>
+              <td class="mono text-amber fw-bold">7%</td>
             </tr>
             <tr style="background:var(--red-light);">
               <td class="fw-bold text-red">50%+ (severely absent)</td>
-              <td class="mono text-red">1%</td>
-              <td class="mono text-red">1%</td>
+              <td class="mono text-red">0%</td>
+              <td class="mono text-red">0%</td>
               <td class="mono text-green">0%</td>
-              <td class="mono text-red">1%</td>
+              <td class="mono text-red">2%</td>
+              <td class="mono text-red">0%</td>
               <td class="mono text-red">2%</td>
             </tr>
           </tbody>
@@ -1228,381 +1073,12 @@
       </div>
 
       <div class="info-box ib-blue">
-        <strong>Year 7 highlight:</strong> 64% of Year 7 pupils have less than 5% absence — the best of any year group, reflecting strong transition and onboarding. <strong>Year 8 and 9 note:</strong> Higher persistent absence in Y8 (28%) and Y9 (26%) is consistent with national patterns for middle secondary years and is being addressed through targeted pastoral intervention. The school's Y8/9 persistent absence remains lower than the similar schools median.
-      </div>
-    </div>
-
-    <!-- DFE ATTENDANCE LADDER -->
-    <div class="section">
-      <div class="section-title">📊 Attendance Improvement Ladder — DfE Benchmarks</div>
-      <div class="section-sub">Herringham's position on the DfE attendance improvement ladder · Source: Similar Schools Autumn 2025/26 Report</div>
-
-      <div class="data-table-wrap" style="max-width:600px;">
-        <table class="data-table">
-          <thead><tr><th>Benchmark</th><th>Attendance %</th><th>Status</th></tr></thead>
-          <tbody>
-            <tr><td class="fw-bold">Pre-pandemic (2018/19)</td><td class="mono fw-bold text-navy">94.3%</td><td><span class="tag tag-slate">Aspirational target</span></td></tr>
-            <tr><td class="fw-bold">Local Authority average (secondary)</td><td class="mono fw-bold text-blue">93.3%</td><td><span class="tag tag-blue">LA benchmark</span></td></tr>
-            <tr class="row-gw"><td class="fw-bold text-navy">🏫 Herringham 2025/26 (to date)</td><td class="mono fw-bold text-green">93.2%</td><td><span class="tag tag-green">Current position ✓</span></td></tr>
-            <tr><td class="fw-bold">ABIE (minimum improvement expectation)</td><td class="mono fw-bold text-blue">92.8%</td><td><span class="tag tag-green">Exceeded ✓</span></td></tr>
-            <tr><td>Herringham 2024/25 full year</td><td class="mono text-muted">92.6%</td><td><span class="tag tag-slate">Prior year</span></td></tr>
-            <tr><td>Similar schools upper quartile</td><td class="mono text-muted">92.2%</td><td><span class="tag tag-green">Herringham above ✓</span></td></tr>
-            <tr><td>National average (secondary)</td><td class="mono text-muted">92.1%</td><td><span class="tag tag-green">Herringham above ✓</span></td></tr>
-            <tr><td>Similar schools median</td><td class="mono text-muted">91.8%</td><td><span class="tag tag-green">Herringham well above ✓</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="info-box ib-green" style="margin-top:16px;">
-        <strong>Herringham's attendance position:</strong> Herringham sits above the LA average, above the ABIE, above the national average, above the similar schools upper quartile, and 1.4pp above the similar schools median. The school is on a clear upward trajectory and is projected to exceed its pre-pandemic attendance level (94.3%) as a medium-term goal.
+        <strong>By year group:</strong> Year 6 (75% under 5% absence, only 7% persistently absent) and Year 2 (73% under 5%) are the strongest year groups for attendance. Year 4 and Year 5 show the highest persistent absence rates (18% and 16% respectively) and are priority year groups for pastoral follow-up. Year 4 also has two pupils in the severely-absent (50%+) band.
       </div>
     </div>
 
   </div><!-- /attendance -->
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- SIMILAR SCHOOLS TAB                            -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <div class="tab-panel" id="tab-similar" data-print-title="🏫 Similar Schools — National & Local Comparisons">
-
-    <div class="idsr-note">
-      <span>📊</span>
-      <div>Source: DfE KS4 Performance Tables 2024/25 (final) &amp; 2023/24 (final) — 4,067 state-funded schools with published results. Similar schools group = Academies (Sponsor-Led), FSM6 ≥ 30%, cohort 150–350 pupils (366 schools). Thurrock P8 uses 2023/24 as P8 is not published for 2024/25.</div>
-    </div>
-
-    <!-- NATIONAL PERCENTILE CARDS -->
-    <div class="section">
-      <div class="section-title">📈 Herringham's National Position — All 4,067 State Schools</div>
-      <div class="section-sub">Where Herringham sits against all state-funded schools with published 2024/25 results</div>
-      <div class="pct-grid">
-        <div class="pct-card pc-blue">
-          <div class="pct-label">A8 — All State Schools</div>
-          <div class="pct-value pv-blue">55th</div>
-          <div class="pct-suffix">percentile</div>
-          <div class="pct-context">A8 of 46.1 vs national mean of 46.1. Above half of all state schools in England.</div>
-        </div>
-        <div class="pct-card pc-green">
-          <div class="pct-label">A8 — Similar Schools (366)</div>
-          <div class="pct-value pv-green">79th</div>
-          <div class="pct-suffix">percentile</div>
-          <div class="pct-context">Among 366 academies with FSM≥30% &amp; similar cohort size. Similar school A8 mean: 41.3.</div>
-        </div>
-        <div class="pct-card pc-green">
-          <div class="pct-label">EM 5+ — All State Schools</div>
-          <div class="pct-value pv-green">64th</div>
-          <div class="pct-suffix">percentile</div>
-          <div class="pct-context">48.2% Eng &amp; Maths 5+ vs national mean 41.4%. Above nearly two-thirds of all state schools.</div>
-        </div>
-        <div class="pct-card pc-green">
-          <div class="pct-label">EM 5+ — Similar Schools</div>
-          <div class="pct-value pv-green">84th</div>
-          <div class="pct-suffix">percentile</div>
-          <div class="pct-context">48.2% vs similar school mean of 35.4%. Top sixth among academies with comparable deprivation profile.</div>
-        </div>
-      </div>
-      <div class="info-box ib-green">
-        <strong>Key message:</strong> When compared against schools with a genuinely similar profile — academies with FSM≥30% and comparable cohort size — Herringham's A8 of 46.1 ranks in the <strong>79th percentile</strong> and its Eng &amp; Maths 5+ in the <strong>84th percentile</strong>. This is the comparison that best reflects Herringham's real performance against contextually matched schools.
-      </div>
-    </div>
-
-    <!-- THURROCK COMPARISON -->
-    <div class="section">
-      <div class="section-title">📍 Thurrock Secondary Schools — 2024/25 A8 Ranking</div>
-      <div class="section-sub">All Thurrock state secondaries with published results — DfE 2024/25 final data. Herringham highlighted. P8 from 2023/24 (latest available).</div>
-      <div class="data-table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>School</th>
-              <th>Year 11</th>
-              <th>A8 2024/25</th>
-              <th>EM 5+ 2024/25</th>
-              <th>EBacc 5+ 2024/25</th>
-              <th>FSM6 %</th>
-              <th>P8 2023/24</th>
-              <th>Context</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="fw-bold">Grays Convent High School</td>
-              <td class="mono">137</td>
-              <td class="mono fw-bold text-green">55.7</td>
-              <td class="mono text-green fw-bold">61.3%</td>
-              <td class="mono">40.1%</td>
-              <td class="mono text-green">16.1%</td>
-              <td class="mono text-green fw-bold">+0.76</td>
-              <td><span class="tag tag-blue">Girls only</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Harris Academy Chafford Hundred</td>
-              <td class="mono">188</td>
-              <td class="mono fw-bold text-green">55.5</td>
-              <td class="mono text-green fw-bold">68.1%</td>
-              <td class="mono">39.9%</td>
-              <td class="mono text-green">10.1%</td>
-              <td class="mono text-green fw-bold">+1.04</td>
-              <td><span class="tag tag-slate">Low FSM</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Harris Academy Riverside</td>
-              <td class="mono">170</td>
-              <td class="mono fw-bold text-blue">47.9</td>
-              <td class="mono text-blue fw-bold">45.3%</td>
-              <td class="mono">25.9%</td>
-              <td class="mono text-blue">26.5%</td>
-              <td class="mono text-green fw-bold">+0.23</td>
-              <td><span class="tag tag-slate">—</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Harris Academy Ockendon</td>
-              <td class="mono">237</td>
-              <td class="mono fw-bold text-blue">47.3</td>
-              <td class="mono text-blue fw-bold">49.4%</td>
-              <td class="mono">26.2%</td>
-              <td class="mono text-blue">24.9%</td>
-              <td class="mono text-green fw-bold">+0.46</td>
-              <td><span class="tag tag-slate">—</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Orsett Heath Academy</td>
-              <td class="mono">113</td>
-              <td class="mono fw-bold text-blue">47.0</td>
-              <td class="mono text-blue fw-bold">47.8%</td>
-              <td class="mono">15.9%</td>
-              <td class="mono text-blue">24.8%</td>
-              <td class="mono text-muted">n/a</td>
-              <td><span class="tag tag-slate">Small cohort</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Thames Park Secondary School</td>
-              <td class="mono">111</td>
-              <td class="mono fw-bold text-blue">46.4</td>
-              <td class="mono text-blue fw-bold">54.1%</td>
-              <td class="mono">7.2%</td>
-              <td class="mono text-blue">27.9%</td>
-              <td class="mono text-muted">n/a</td>
-              <td><span class="tag tag-slate">Small cohort</span></td>
-            </tr>
-            <tr class="row-gw">
-              <td class="fw-bold text-navy">🏫 Herringham Primary Academy</td>
-              <td class="mono fw-bold">197</td>
-              <td class="mono fw-bold text-blue">46.1</td>
-              <td class="mono text-blue fw-bold">48.2%</td>
-              <td class="mono">7.6%</td>
-              <td class="mono text-red fw-bold">38.6%</td>
-              <td class="mono text-green fw-bold">+0.07</td>
-              <td><span class="tag tag-red">Highest FSM in Thurrock</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Ortu Gable Hall School</td>
-              <td class="mono">180</td>
-              <td class="mono fw-bold text-blue">45.8</td>
-              <td class="mono text-blue fw-bold">43.9%</td>
-              <td class="mono">9.4%</td>
-              <td class="mono text-blue">19.4%</td>
-              <td class="mono text-amber fw-bold">−0.51</td>
-              <td><span class="tag tag-slate">—</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Ortu Hassenbrook Academy</td>
-              <td class="mono">128</td>
-              <td class="mono fw-bold text-amber">43.8</td>
-              <td class="mono text-amber fw-bold">43.8%</td>
-              <td class="mono">1.6%</td>
-              <td class="mono text-amber">35.2%</td>
-              <td class="mono text-red fw-bold">−0.76</td>
-              <td><span class="tag tag-amber">High FSM</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">St Clere's School</td>
-              <td class="mono">256</td>
-              <td class="mono fw-bold text-amber">43.2</td>
-              <td class="mono text-amber fw-bold">41.4%</td>
-              <td class="mono">19.9%</td>
-              <td class="mono text-blue">19.9%</td>
-              <td class="mono text-amber fw-bold">−0.34</td>
-              <td><span class="tag tag-slate">—</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">William Edwards School</td>
-              <td class="mono">233</td>
-              <td class="mono fw-bold text-amber">42.5</td>
-              <td class="mono text-red fw-bold">34.8%</td>
-              <td class="mono">13.3%</td>
-              <td class="mono text-blue">16.3%</td>
-              <td class="mono text-amber fw-bold">−0.29</td>
-              <td><span class="tag tag-slate">—</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">The Hathaway Academy</td>
-              <td class="mono">119</td>
-              <td class="mono fw-bold text-red">41.1</td>
-              <td class="mono text-red fw-bold">37.0%</td>
-              <td class="mono">16.0%</td>
-              <td class="mono text-amber">29.4%</td>
-              <td class="mono text-amber fw-bold">−0.38</td>
-              <td><span class="tag tag-slate">—</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Ormiston Park Academy</td>
-              <td class="mono">127</td>
-              <td class="mono fw-bold text-red">37.5</td>
-              <td class="mono text-red fw-bold">28.3%</td>
-              <td class="mono">3.9%</td>
-              <td class="mono text-red fw-bold">39.4%</td>
-              <td class="mono text-red fw-bold">−0.73</td>
-              <td><span class="tag tag-red">High FSM</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="info-box ib-green">
-        <strong>Ofsted key message:</strong> Herringham ranks 7th in Thurrock on A8 — but context is everything. Herringham's whole-school FSM6 rate is <strong>42.3%</strong> (IDSR) — the highest of any mainstream Thurrock secondary. The figure shown in the table (38.6%) is the DfE KS4 cohort rate, used here for like-for-like comparison with other schools from the same dataset. Either way, the picture is the same: schools ranked above Herringham all have significantly lower deprivation (FSM 10–28%). The only comparable school is Ormiston Park (39.4% FSM) — which has an A8 of 37.5 vs Herringham's 46.1, and a P8 of −0.73 vs +0.07.
-      </div>
-    </div>
-
-    <!-- SIMILAR SCHOOLS NATIONALLY -->
-    <div class="section">
-      <div class="section-title">🔍 Nationally Similar Schools — Academies, FSM≥30%, 150–350 Pupils</div>
-      <div class="section-sub">A selection of schools from the 366 in Herringham's national peer group, showing Herringham's relative position. Sorted by A8. All data: DfE 2024/25 final.</div>
-      <div class="data-table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>School</th>
-              <th>Town</th>
-              <th>Year 11</th>
-              <th>A8</th>
-              <th>EM 5+</th>
-              <th>FSM6 %</th>
-              <th>Dis. A8</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="row-subhead"><td colspan="7">— Top performers in peer group (above Herringham) —</td></tr>
-            <tr>
-              <td class="fw-bold">Mossbourne Community Academy</td>
-              <td>London</td><td class="mono">206</td>
-              <td class="mono fw-bold text-green">65.1</td>
-              <td class="mono text-green fw-bold">70.4%</td>
-              <td class="mono">52.4%</td>
-              <td class="mono">60.2</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Paddington Academy</td>
-              <td>London</td><td class="mono">185</td>
-              <td class="mono fw-bold text-green">61.6</td>
-              <td class="mono text-green fw-bold">77.3%</td>
-              <td class="mono">51.4%</td>
-              <td class="mono">58.1</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">The Bridge Academy</td>
-              <td>London</td><td class="mono">173</td>
-              <td class="mono fw-bold text-green">56.9</td>
-              <td class="mono text-green fw-bold">62.4%</td>
-              <td class="mono">55.5%</td>
-              <td class="mono">52.1</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Chelsea Academy</td>
-              <td>London</td><td class="mono">177</td>
-              <td class="mono fw-bold text-green">51.9</td>
-              <td class="mono text-green fw-bold">53.1%</td>
-              <td class="mono">38.4%</td>
-              <td class="mono">47.1</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Kingswood Academy</td>
-              <td>Hull</td><td class="mono">229</td>
-              <td class="mono fw-bold text-green">55.0</td>
-              <td class="mono text-green fw-bold">57.6%</td>
-              <td class="mono">31.9%</td>
-              <td class="mono">46.8</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Harris Academy Battersea</td>
-              <td>London</td><td class="mono">158</td>
-              <td class="mono fw-bold text-green">49.8</td>
-              <td class="mono text-green fw-bold">55.7%</td>
-              <td class="mono">60.8%</td>
-              <td class="mono">46.3</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Essa Academy</td>
-              <td>Bolton</td><td class="mono">200</td>
-              <td class="mono fw-bold text-green">53.0</td>
-              <td class="mono text-green fw-bold">54.0%</td>
-              <td class="mono">42.0%</td>
-              <td class="mono">50.6</td>
-            </tr>
-            <tr class="row-subhead"><td colspan="7">— Herringham Primary Academy —</td></tr>
-            <tr class="row-gw">
-              <td class="fw-bold text-navy">🏫 Herringham Primary Academy</td>
-              <td>Grays</td><td class="mono fw-bold">197</td>
-              <td class="mono fw-bold text-blue">46.1</td>
-              <td class="mono fw-bold text-blue">48.2%</td>
-              <td class="mono text-red fw-bold">38.6%</td>
-              <td class="mono fw-bold text-blue">38.1</td>
-            </tr>
-            <tr class="row-subhead"><td colspan="7">— Schools just below Herringham in peer group —</td></tr>
-            <tr>
-              <td class="fw-bold">Ark Academy</td>
-              <td>Wembley</td><td class="mono">168</td>
-              <td class="mono fw-bold text-blue">51.5</td>
-              <td class="mono text-blue fw-bold">50.6%</td>
-              <td class="mono">39.9%</td>
-              <td class="mono">46.7</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Harris Academy Greenwich</td>
-              <td>London</td><td class="mono">184</td>
-              <td class="mono fw-bold text-blue">49.9</td>
-              <td class="mono text-blue fw-bold">54.9%</td>
-              <td class="mono">33.2%</td>
-              <td class="mono">42.1</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Dixons City Academy</td>
-              <td>Bradford</td><td class="mono">179</td>
-              <td class="mono fw-bold text-blue">49.5</td>
-              <td class="mono text-blue fw-bold">50.3%</td>
-              <td class="mono">30.2%</td>
-              <td class="mono">43.8</td>
-            </tr>
-            <tr class="row-subhead"><td colspan="7">— Similar schools peer group averages —</td></tr>
-            <tr>
-              <td class="fw-bold text-muted">Peer group mean (366 schools)</td>
-              <td class="text-muted">England</td><td class="mono text-muted">~208</td>
-              <td class="mono fw-bold text-amber">41.3</td>
-              <td class="mono text-amber fw-bold">35.4%</td>
-              <td class="mono text-muted">~38%</td>
-              <td class="mono text-muted">—</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="info-box ib-green">
-        <strong>Context note:</strong> Many of the peer-group schools above Herringham are London schools benefiting from London weighting, the London Challenge legacy effect, and strong London-based academy chain support (Ark, Harris, Mossbourne). Herringham's performance relative to non-London peer-group schools is particularly strong. Herringham ranks 75th of 366 in this group — <strong>top 20th percentile.</strong>
-      </div>
-    </div>
-
-    <!-- P8 THURROCK CHART -->
-    <div class="section">
-      <div class="section-title">Thurrock Schools — Progress 8 Comparison (2023/24)</div>
-      <div class="section-sub">P8 data for all Thurrock schools with published results — 2023/24 (latest year P8 is available). Schools with smaller cohorts may not have published P8.</div>
-      <div class="chart-card" style="margin-bottom:16px;">
-        <div class="chart-card-title">Progress 8 — All Thurrock Schools 2023/24</div>
-        <div class="chart-card-sub">Herringham shown in blue. National average (−0.03) shown as dashed line.</div>
-        <div class="chart-wrap" style="height:280px;"><canvas id="chartThrP8"></canvas></div>
-      </div>
-      <div class="info-box ib-blue">
-        <strong>P8 in Thurrock:</strong> Herringham's P8 of +0.07 is one of only four positive P8 scores in Thurrock and the highest among schools with comparable deprivation. Herringham pupils make better progress than pupils in most other Thurrock schools, including those with lower FSM rates.
-      </div>
-    </div>
-
-  </div><!-- /similar -->
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- INCLUSION TAB                                  -->
@@ -3188,270 +2664,6 @@
   </div><!-- /send -->
 
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!-- DESTINATIONS & CAREERS TAB                     -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <div class="tab-panel" id="tab-destinations" data-print-title="🎓 Destinations & Careers Programme">
-
-    <div class="idsr-note">
-      <span>📋</span>
-      <div>Sources: Year 11 Destinations tracking data (2023/24), Intended Destinations forms (2024/25 &amp; 2025/26), Easter 2026 applications snapshot, 2023 Leavers survey (university), Careers Activities &amp; Events programme (2025/26). <strong>Note on data completeness:</strong> Post-16 destination tracking relies on voluntary responses from leavers and is inherently partial. The 2023/24 data (229 tracked) is the most complete. Figures should be read as indicative rather than census-accurate. Where data is incomplete, this tab focuses on what can be evidenced.</div>
-    </div>
-
-    <!-- HEADLINE METRICS -->
-    <div class="section">
-      <div class="section-title">🎓 Post-16 Destinations — Key Metrics</div>
-
-      <div class="metrics-grid">
-        <div class="metric-card mc-green">
-          <div class="metric-label">In Education or Training (2023/24)</div>
-          <div class="metric-value mv-green">84%</div>
-          <div class="metric-plain-label mpl-green">179 education · 13 apprenticeships</div>
-          <div class="metric-vs">Of 229 tracked 2023/24 leavers (Year 1 data)</div>
-          <div class="metric-idsr">78% in education · 6% apprenticeships · 10% NEET / unable to track</div>
-        </div>
-
-        <div class="metric-card mc-green">
-          <div class="metric-label">Applied by Easter (Current Y11)</div>
-          <div class="metric-value mv-green">84%</div>
-          <div class="metric-plain-label mpl-green">162 of 192 pupils</div>
-          <div class="metric-vs">Easter 2026 snapshot · before GCSE results</div>
-          <div class="metric-idsr">Pupils applying early — strong careers guidance impact</div>
-        </div>
-
-        <div class="metric-card mc-green">
-          <div class="metric-label">Conditional Offers (Current Y11)</div>
-          <div class="metric-value mv-green">73%</div>
-          <div class="metric-plain-label mpl-green">141 of 192 pupils</div>
-          <div class="metric-vs">Easter 2026 · already holding offers</div>
-          <div class="metric-idsr">College, sixth form &amp; apprenticeship conditional offers confirmed</div>
-        </div>
-
-        <div class="metric-card mc-green">
-          <div class="metric-label">Planning Education / Training (2025/26)</div>
-          <div class="metric-value mv-green">88%</div>
-          <div class="metric-plain-label mpl-green">205 intended responses</div>
-          <div class="metric-vs">College 45% · Sixth Form 32% · Apprenticeship 11%</div>
-          <div class="metric-idsr">Only 1% indicated employment with no training</div>
-        </div>
-
-        <div class="metric-card mc-blue">
-          <div class="metric-label">Employer / Institution Contacts</div>
-          <div class="metric-value mv-blue">30+</div>
-          <div class="metric-plain-label mpl-blue">Per academic year</div>
-          <div class="metric-vs">Assemblies, trips, taster days, mock interviews</div>
-          <div class="metric-idsr">Gatsby Benchmark coverage across all 5 year groups</div>
-        </div>
-
-        <div class="metric-card mc-purple">
-          <div class="metric-label">University Aspirations</div>
-          <div class="metric-value mv-purple" style="font-size:18px;padding-top:4px;">Inc. Imperial</div>
-          <div class="metric-plain-label mpl-purple">From 2023 leavers survey</div>
-          <div class="metric-vs">8 confirmed university destinations in small sample</div>
-          <div class="metric-idsr">Imperial, Queen Mary's, Royal Holloway, City St George's, Kent</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- DARK CALLOUT -->
-    <div class="dark-callout">
-      <h3>🎓 Destinations &amp; Careers — Ofsted Narrative</h3>
-      <p>Key messages about post-16 progression and careers education — contextualised for a high-deprivation, high-aspiration community.</p>
-      <div class="dark-points">
-        <div class="dark-point">
-          <div class="dark-point-label">Pre-GCSE engagement</div>
-          <div class="dark-point-stat">73% with offers</div>
-          <div class="dark-point-text">73% of the current Year 11 cohort already hold conditional offers before sitting their GCSEs — evidence that careers guidance is having a practical, measurable impact on pupil preparedness.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">2023/24 destinations</div>
-          <div class="dark-point-stat">84% in Ed/Training</div>
-          <div class="dark-point-text">Of 229 tracked 2023/24 leavers, 84% progressed to education or apprenticeship training in Year 1. In a community where post-16 participation has historically been a challenge, this represents strong outcomes.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">University aspirations</div>
-          <div class="dark-point-stat">Inc. Imperial College</div>
-          <div class="dark-point-text">From a voluntary survey of 2023 leavers, confirmed university destinations include Imperial College London (Chemical Engineering), Queen Mary's (Neuroscience), Royal Holloway, City St George's, and the University of Kent — demonstrating high aspiration from a deprived coastal community.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">Careers programme</div>
-          <div class="dark-point-stat">All 8 Gatsby Benchmarks</div>
-          <div class="dark-point-text">A structured programme of careers education runs across all five year groups — including Unifrog, work experience, mock interviews, careers fair, 30+ employer and institution contacts, and weekly PAD sessions. The programme explicitly addresses aspiration-raising in a low-HE-participation community.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- INTENDED DESTINATIONS CHARTS -->
-    <div class="section">
-      <div class="section-title">📊 Intended Destinations — Two-Year Comparison</div>
-      <div class="section-sub">Student-reported intended post-16 destination · Nov 2024 (n=219) and Nov 2025 (n=205) · Voluntary form responses</div>
-
-      <div class="charts-grid">
-        <div class="chart-card">
-          <div class="chart-card-title">Intended Destination — 2025/26 Y11 (Nov 2025)</div>
-          <div class="chart-card-sub">205 responses · 88% planning education or training</div>
-          <div class="chart-wrap" style="height:260px;"><canvas id="chartDest2526"></canvas></div>
-        </div>
-        <div class="chart-card">
-          <div class="chart-card-title">Intended Destination — 2024/25 Y11 (Nov 2024)</div>
-          <div class="chart-card-sub">219 responses · 89% planning education or training</div>
-          <div class="chart-wrap" style="height:260px;"><canvas id="chartDest2425"></canvas></div>
-        </div>
-      </div>
-
-      <div class="info-box ib-green">
-        <strong>Consistency across cohorts:</strong> Both the 2024/25 and 2025/26 Year 11 cohorts show near-identical destination intentions — approximately 89% planning to enter education or training. College (around 45%) is the dominant route, followed by sixth form (32–34%) and apprenticeships (10–12%). Employment with no training is minimal (1–2%), demonstrating that Herringham pupils leave with both aspiration and a plan.
-      </div>
-    </div>
-
-    <!-- EASTER 2026 SNAPSHOT -->
-    <div class="section">
-      <div class="section-title">📅 Easter 2026 Snapshot — Current Y11 Applications</div>
-      <div class="section-sub">Data collected Easter 2026 · 192 Year 11 pupils surveyed · Before GCSE examinations begin</div>
-
-      <div class="data-table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr><th>Measure</th><th>Number</th><th>% of Y11</th><th>Context</th></tr>
-          </thead>
-          <tbody>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">Already applied to college/sixth form/apprenticeship</td>
-              <td class="mono fw-bold text-green">162</td>
-              <td class="mono fw-bold text-green">84%</td>
-              <td style="font-size:12px;">Applied well before GCSE results — strong early planning</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Not yet applied</td>
-              <td class="mono text-amber fw-bold">21</td>
-              <td class="mono text-amber">11%</td>
-              <td style="font-size:12px;">Still considering options — many attending open evenings</td>
-            </tr>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">Already hold conditional offers</td>
-              <td class="mono fw-bold text-green">141</td>
-              <td class="mono fw-bold text-green">73%</td>
-              <td style="font-size:12px;">Conditional on GCSE results — majority of cohort secured before exams</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Applying for A Levels</td>
-              <td class="mono fw-bold text-blue">~93</td>
-              <td class="mono text-blue">~48%</td>
-              <td style="font-size:12px;">Academic route — includes Harris Chafford, St Clere's, LAE, Barking Abbey, Havering</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Applying for BTEC / Vocational</td>
-              <td class="mono fw-bold text-blue">~50</td>
-              <td class="mono text-blue">~26%</td>
-              <td style="font-size:12px;">Including South Essex College, Palmers, USP, New City</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">T-Levels</td>
-              <td class="mono fw-bold text-blue">~17</td>
-              <td class="mono text-blue">~9%</td>
-              <td style="font-size:12px;">Growth in T-Level take-up — technical and professional route</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Apprenticeships</td>
-              <td class="mono fw-bold text-blue">~12</td>
-              <td class="mono text-blue">~6%</td>
-              <td style="font-size:12px;">Including Army, engineering, electrical — employment with training</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- UNIVERSITY DESTINATIONS -->
-    <div class="section">
-      <div class="section-title">🎓 University Destinations — 2023 Leavers (Survey Sample)</div>
-      <div class="section-sub">Voluntary survey of 2023 Year 11 leavers · Small sample (n=17) · Illustrative of aspiration, not census data</div>
-
-      <div class="narrative-grid">
-        <div class="narrative-card nc-purple">
-          <div class="nc-eyebrow">🏛️ Russell Group / High Tariff</div>
-          <div class="nc-stat">Imperial</div>
-          <div class="nc-title">Imperial College London — Chemical Engineering</div>
-          <div class="nc-text">A Herringham pupil progressed to Imperial College London to study Chemical Engineering — one of the most competitive undergraduate courses in the UK. From Tilbury to one of the world's top universities is a remarkable journey and a powerful signal of what Herringham pupils can achieve.</div>
-        </div>
-        <div class="narrative-card nc-blue">
-          <div class="nc-eyebrow">🔬 Sciences &amp; STEM</div>
-          <div class="nc-stat">Neuroscience</div>
-          <div class="nc-title">Queen Mary's University — Neuroscience</div>
-          <div class="nc-text">Additional university destinations from the same survey cohort include Queen Mary's University of London (Neuroscience), Royal Holloway (Drama), University of Kent (Law), and City St George's, University of London — demonstrating genuine breadth of aspiration across disciplines.</div>
-        </div>
-        <div class="narrative-card nc-green">
-          <div class="nc-eyebrow">⚖️ Law &amp; Professional</div>
-          <div class="nc-stat">Law · Civil Eng.</div>
-          <div class="nc-title">University of Law, ARU, City St George's</div>
-          <div class="nc-text">Multiple leavers progressed to professional degree pathways — Law (University of Law, LLB Hons), Civil Engineering (Anglia Ruskin), and Architecture (London South Bank). In a community where higher education participation is historically low, these outcomes are significant.</div>
-        </div>
-        <div class="narrative-card nc-amber">
-          <div class="nc-eyebrow">⚠️ Data note</div>
-          <div class="nc-stat">n = 17</div>
-          <div class="nc-title">Small voluntary sample — aspirational, not representative</div>
-          <div class="nc-text">This data comes from a voluntary survey with 17 respondents from the 2023 leaving cohort. It is not a complete picture but illustrates the range of destinations achieved. Full destination tracking remains an area of development — with systematic collection improving year on year.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CAREERS PROGRAMME -->
-    <div class="section">
-      <div class="section-title">🗓️ Careers Programme 2025/26 — Gatsby Benchmark Coverage</div>
-      <div class="section-sub">Source: Careers Activities &amp; Events document 2025/26 · Structured programme across all five year groups</div>
-
-      <div class="data-table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr><th>Year Group</th><th>Key Activities 2025/26</th><th>Employer / Provider Contacts</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="fw-bold text-navy">Year 7</td>
-              <td style="font-size:12px;">Aspirations Survey, Unifrog launch, Future Skills Questionnaire, PAD careers weekly, Careers Fair (March), Youth Parliament, Lower Thames Crossing assembly &amp; trip, DWP assembly, ARU assembly</td>
-              <td style="font-size:12px;">DWP, Anglia Ruskin University, Lower Thames Crossing</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Year 8</td>
-              <td style="font-size:12px;">Unifrog quizzes, Future Skills Questionnaire, Careers Fair, National Apprenticeship Week, National Careers Week, Cadets taster (Barking Abbey), Lower Thames Crossing trip, ARU assembly</td>
-              <td style="font-size:12px;">Barking Abbey (Cadets), Lower Thames Crossing, Anglia Ruskin</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Year 9</td>
-              <td style="font-size:12px;">KS4 Options Evening, Careers Fair, Intl Women's Day event, Lower Thames Crossing trip, Break the Ceiling project, DWP LMI assembly, ARU assembly, Options Evening for parents (April)</td>
-              <td style="font-size:12px;">Lower Thames Crossing, DWP, Anglia Ruskin, 'Break the Ceiling'</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Year 10</td>
-              <td style="font-size:12px;">Work experience (June, 1 week), Mock Interview Day (July), Next Steps Evening, NHS Careers trip (ARU), Apprenticeship &amp; Job Fair (Thameside), Make Happen, South Essex College taster, Gear Up Easter School, CV writing, interview technique</td>
-              <td style="font-size:12px;">Harris Riverside, Make Happen, USP, NHS, South Essex College, Thameside Theatre</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Year 11</td>
-              <td style="font-size:12px;">Individual careers interviews, Next Steps Evenings (Nov + Jan), Careers Fair, Mossbourne assembly, Harris Chafford assembly, Harris Riverside assembly, South Essex College assembly, St Clere's assembly, USP College assembly, Careers Fair (March)</td>
-              <td style="font-size:12px;">Mossbourne, Harris Chafford, Harris Riverside, South Essex College, St Clere's, USP College, Thurrock Youth Parliament</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px;">
-        <div class="info-box ib-green" style="margin-bottom:0;">
-          <strong>📊 Unifrog — all year groups:</strong> Weekly careers activity via Unifrog platform for every tutor group. Job of the week, career exploration, skills profiling and university research — embedded into the school day from Year 7.
-        </div>
-        <div class="info-box ib-blue" style="margin-bottom:0;">
-          <strong>💼 Work experience — Year 10:</strong> All Year 10 pupils complete a one-week work placement (June 29–July 3, 2026). Supported by CV workshops, letter of application, interview technique, H&amp;S training, and rights &amp; responsibilities sessions.
-        </div>
-        <div class="info-box ib-blue" style="margin-bottom:0;">
-          <strong>🎙️ Individual careers interviews — Y11:</strong> Every Year 11 pupil receives an individual CIAG interview with the school's careers advisor between September and December, ensuring personalised guidance before applications open.
-        </div>
-        <div class="info-box ib-green" style="margin-bottom:0;">
-          <strong>🏭 Thurrock growth sectors:</strong> The careers programme explicitly aligns to Thurrock's economic growth sectors — Health &amp; Care, Engineering &amp; Manufacturing, Finance, Construction, IT &amp; Digital, Creative &amp; Logistics — with Lower Thames Crossing, NHS and DWP as key employer partners.
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /destinations -->
 
 
   <!-- ═══════════════════════════════════════════════ -->
@@ -3794,507 +3006,14 @@
 
     <div class="idsr-note">
       <span>📋</span>
-      <div>Sources: StepLab platform bulk export (16 June 2026) · T&amp;L Spreadsheet 2025/26. StepLab has been in use since March 2022. The 2025/26 figures cover September 2025 to 16 June 2026. All observation data is drawn directly from the platform — figures are accurate. Observations are <strong>ungraded</strong> — Herringham uses coaching pathways, not lesson grades. Quality is assessed through a pathway code: <strong>1A = Shout Out</strong> (outstanding practice, shared whole-staff) · <strong>1B = Strength &amp; Share</strong> · <strong>2A = Tweak</strong> (strong with small refinement needed) · <strong>2B = Support</strong> (targeted development).</div>
+      <div>This tab is a placeholder. The previous version of this dashboard held classroom-observation data (StepLab) specific to a different school — that has been removed as it does not reflect Herringham. No Herringham-specific teaching &amp; learning monitoring data has been supplied yet.</div>
     </div>
 
-    <!-- ATTAINMENT AS EVIDENCE OF TEACHING QUALITY -->
-    <div class="dark-callout">
-      <h3>📊 Attainment as Evidence of Teaching Quality</h3>
-      <p>Herringham does not grade individual lessons — but outcomes data provides the most objective external measure of teaching quality available.</p>
-      <div class="dark-points">
-        <div class="dark-point">
-          <div class="dark-point-label">The core argument</div>
-          <div class="dark-point-stat">FSM 42.3% → A8 = national</div>
-          <div class="dark-point-text">A school with the highest FSM6 rate in Thurrock (42.3%), a Low Stability flag across two consecutive Year 11 cohorts, and 21.2% SEND achieving A8 in line with the national average is not doing so by accident. Teaching quality is the most significant in-school factor in pupil outcomes — and these outcomes are the evidence.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">Disadvantaged pupils</div>
-          <div class="dark-point-stat">Dis P8 Above (sig+)</div>
-          <div class="dark-point-text">Disadvantaged P8 of −0.04 is 0.53 points above the national disadvantaged average of −0.57, rated Above (sig+) for two consecutive years. For disadvantaged pupils to progress significantly better than their national peers, the quality of teaching they receive — day in, day out — must be consistently high.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">Low prior attainers</div>
-          <div class="dark-point-stat">A8 29.0 vs 25.2 (sig+)</div>
-          <div class="dark-point-text">Low prior attaining pupils achieve A8 of 29.0 vs the national average of 25.2 — Above (sig+). Many are SEND and/or disadvantaged. Reaching above-average outcomes for the school's most complex learners requires teaching that adapts, scaffolds and stretches with precision and consistency.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">Three-year trajectory</div>
-          <div class="dark-point-stat">44.2 → 44.6 → 46.1</div>
-          <div class="dark-point-text">A8 has risen for three consecutive years against two Low Stability cohorts. A rising attainment trajectory in a challenging context is the strongest available indicator that teaching quality is genuinely improving — and the StepLab data, shoutout rate trend, and observation culture provide the mechanism that explains why.</div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- HEADLINE METRICS -->
     <div class="section">
-      <div class="section-title">📚 Teaching &amp; Learning — Headline Measures 2025/26</div>
-      <div class="section-sub">Source: StepLab platform export (16 June 2026) · 2025/26 = September 2025 to June 2026</div>
-
-      <div class="metrics-grid">
-        <div class="metric-card mc-green">
-          <div class="metric-label">Drop-In Observations 2025/26</div>
-          <div class="metric-value mv-green">796</div>
-          <div class="metric-plain-label mpl-green">To 16 June 2026</div>
-          <div class="metric-vs">71 staff observed · 61 observers</div>
-          <div class="metric-idsr">Ungraded — coaching pathways, not lesson grades</div>
-        </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Shoutout Rate 2025/26</div>
-          <div class="metric-value mv-green">47%</div>
-          <div class="metric-plain-label mpl-green">377 of 796 drop-ins = shoutout</div>
-          <div class="metric-vs">Trend: 21% (22/23) → 39% (24/25) → 47% (25/26)</div>
-          <div class="metric-idsr">Improving every year — quality baseline rising</div>
-        </div>
-        <div class="metric-card mc-blue">
-          <div class="metric-label">Staff Observed 2025/26</div>
-          <div class="metric-value mv-blue">71</div>
-          <div class="metric-plain-label mpl-blue">of 85 on platform (84%)</div>
-          <div class="metric-vs">0 flagged observations · 478 SLT drop-ins</div>
-          <div class="metric-idsr">Near-universal observation culture embedded</div>
-        </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">STEPS Achieved (all time)</div>
-          <div class="metric-value mv-green">409</div>
-          <div class="metric-plain-label mpl-green">Since platform launch 2022</div>
-          <div class="metric-vs">Deliberate practice milestones completed</div>
-          <div class="metric-idsr">Top achiever: 26 STEPS (individual, 2025/26)</div>
-        </div>
-        <div class="metric-card mc-purple">
-          <div class="metric-label">Course Modules Completed</div>
-          <div class="metric-value mv-purple">1,003</div>
-          <div class="metric-plain-label mpl-purple">By 48 staff (all time)</div>
-          <div class="metric-vs">Self-directed professional learning on StepLab</div>
-          <div class="metric-idsr">368 study modules completed on top of this</div>
-        </div>
-        <div class="metric-card mc-blue">
-          <div class="metric-label">Active Coaching Cycles</div>
-          <div class="metric-value mv-blue">42</div>
-          <div class="metric-plain-label mpl-blue">Coaches completing cycle feedback</div>
-          <div class="metric-vs">50% average cycle completion rate</div>
-          <div class="metric-idsr">12 staff in formal SIT/ECT/Apprenticeship programmes</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- OFSTED NARRATIVE -->
-    <div class="dark-callout">
-      <h3>📚 Teaching &amp; Learning — Ofsted Narrative</h3>
-      <p>Key messages about the school's approach to developing and sustaining high-quality teaching — all figures from StepLab platform export, June 2026.</p>
-      <div class="dark-points">
-        <div class="dark-point">
-          <div class="dark-point-label">47% shoutout rate</div>
-          <div class="dark-point-stat">377 of 796 obs.</div>
-          <div class="dark-point-text">47% of all drop-in observations in 2025/26 resulted in a Shout Out — outstanding practice celebrated and shared whole-staff. This rate has risen from 21% in 2022/23, demonstrating genuine improvement in teaching quality over three years.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">Zero flagged observations</div>
-          <div class="dark-point-stat">0 flagged</div>
-          <div class="dark-point-text">Not a single drop-in observation in 2025/26 was flagged for serious concern. This, alongside a 47% shoutout rate, indicates a teaching workforce where quality is the baseline and the programme is focused on refinement rather than remediation.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">409 STEPS achieved</div>
-          <div class="dark-point-stat">Deliberate practice</div>
-          <div class="dark-point-text">409 STEPS achieved since platform launch — teachers identifying specific micro-skills, practising them deliberately with coach support, and progressing when secure. 1,003 course modules completed by 48 staff on top of this.</div>
-        </div>
-        <div class="dark-point">
-          <div class="dark-point-label">Year-on-year growth</div>
-          <div class="dark-point-stat">21% → 47%</div>
-          <div class="dark-point-text">The shoutout rate has grown every year since 2022/23 (21% → 25% → 39% → 47%). Observation volume has also grown. This simultaneous growth in both quantity and quality of positive observations is the strongest indicator of an improving teaching culture.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- DROP-IN BAND BREAKDOWN -->
-    <div class="section">
-      <div class="section-title">🔍 Drop-In Observation Bands — All Staff 2025/26</div>
-      <div class="section-sub">Drop-in bands show cumulative observation frequency. 1+ = 1–4 observations · 5+ = reached 5–9 · 10+ = reached 10–14 · 15+ = 15 or more. Staff may be in multiple bands as they progress through the year.</div>
-
-      <div class="charts-grid">
-        <div class="chart-card">
-          <div class="chart-card-title">Staff in Each Observation Band</div>
-          <div class="chart-card-sub">Number of staff reaching each drop-in threshold — 73 total teaching staff</div>
-          <div class="chart-wrap" style="height:240px;"><canvas id="chartDIBands"></canvas></div>
-        </div>
-        <div class="chart-card">
-          <div class="chart-card-title">Weekly Drop-Ins &amp; Shoutouts — Full Year</div>
-          <div class="chart-card-sub">Term 1 (weeks 1–14) and Spring term (weeks 15–21) · Half-term totals shown as bars</div>
-          <div class="chart-wrap" style="height:240px;"><canvas id="chartWeeklyDI"></canvas></div>
-        </div>
-      </div>
-
-      <div class="data-table-wrap">
-        <table class="data-table">
-          <thead><tr><th>Band</th><th>What it means</th><th>Number of staff</th><th>% of teaching staff</th><th>Context</th></tr></thead>
-          <tbody>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">Band 1+ (1–4 obs)</td>
-              <td style="font-size:12px;">At least 1 drop-in observation completed</td>
-              <td class="mono fw-bold text-blue">70</td>
-              <td class="mono text-blue">96%</td>
-              <td style="font-size:12px;">Near-universal coverage — culture of openness to observation</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Band 5+ (5–9 obs)</td>
-              <td style="font-size:12px;">Regular observation — embedded in practice</td>
-              <td class="mono fw-bold text-green">63</td>
-              <td class="mono text-green">86%</td>
-              <td style="font-size:12px;">Most teaching staff observed at regular intervals throughout the year</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Band 10+ (10–14 obs)</td>
-              <td style="font-size:12px;">High-frequency observation — intensive coaching</td>
-              <td class="mono fw-bold text-blue">27</td>
-              <td class="mono text-blue">37%</td>
-              <td style="font-size:12px;">Over a third of staff receiving intensive, structured observation support</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Band 15+ (15+ obs)</td>
-              <td style="font-size:12px;">Highest-frequency — deliberate practice focus</td>
-              <td class="mono fw-bold text-purple">5</td>
-              <td class="mono text-purple">7%</td>
-              <td style="font-size:12px;">Most intensively coached staff — targeted support for maximum impact</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- SHOUTOUT DOMAINS & STEPS -->
-    <div class="section">
-      <div class="section-title">🗺️ What's Being Celebrated — Shoutout Domains &amp; Observation Tags</div>
-      <div class="section-sub">StepLab categories what outstanding practice is being recognised for · Plus the most common tags from all 796 drop-in observations 2025/26</div>
-
-      <div class="charts-grid">
-        <div class="chart-card">
-          <div class="chart-card-title">Shoutout Domains — What's Being Celebrated (all time, 520 shoutouts)</div>
-          <div class="chart-card-sub">StepLab domain framework — what aspect of teaching is being recognised as outstanding</div>
-          <div class="chart-wrap" style="height:240px;"><canvas id="chartPathways"></canvas></div>
-        </div>
-        <div class="chart-card">
-          <div class="chart-card-title">Year-on-Year: Drop-Ins &amp; Shoutout Rate</div>
-          <div class="chart-card-sub">Growing volume AND growing quality — shoutout rate rising every year</div>
-          <div class="chart-wrap" style="height:240px;"><canvas id="chartSTEPS"></canvas></div>
-        </div>
-      </div>
-
-      <div class="data-table-wrap" style="margin-top:8px;">
-        <table class="data-table">
-          <thead><tr><th>Top Observation Tags 2025/26</th><th>Count</th><th>What this signals</th></tr></thead>
-          <tbody>
-            <tr class="row-highlight"><td class="fw-bold text-navy">Strong Start</td><td class="mono fw-bold text-green">133</td><td style="font-size:12px;">Signature Strategy — lesson beginning routines are the most commonly observed and celebrated element</td></tr>
-            <tr><td class="fw-bold text-navy">Vocabulary Acquisition</td><td class="mono fw-bold text-green">111</td><td style="font-size:12px;">Deliberate vocabulary teaching is embedded — consistent with SEND and EAL pupil profile</td></tr>
-            <tr><td class="fw-bold text-navy">Strong Finish</td><td class="mono fw-bold text-blue">101</td><td style="font-size:12px;">Lesson consolidation and plenary — bookending of learning is consistent</td></tr>
-            <tr><td class="fw-bold text-navy">Teacher Feedback</td><td class="mono fw-bold text-blue">64</td><td style="font-size:12px;">Assessment-responsive teaching being observed and logged regularly</td></tr>
-            <tr><td class="fw-bold text-navy">Assessment for Learning</td><td class="mono fw-bold text-blue">58</td><td style="font-size:12px;">Formative assessment embedded in classroom practice</td></tr>
-            <tr><td class="fw-bold text-navy">SEND Focus</td><td class="mono fw-bold text-blue">40</td><td style="font-size:12px;">SEND-specific strategies observed and celebrated — consistent with 21.2% SEND register</td></tr>
-            <tr><td class="fw-bold text-navy">High Participation Ratio</td><td class="mono fw-bold text-blue">40</td><td style="font-size:12px;">All pupils thinking and responding — Signature Strategy core principle</td></tr>
-            <tr><td class="fw-bold text-navy">Effective use of Mini Whiteboards</td><td class="mono fw-bold text-blue">22</td><td style="font-size:12px;">MWB as AFL tool — 22 specific observations of effective MWB use</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="info-box ib-green">
-        <strong>What the tags show:</strong> The most commonly observed elements (Strong Start 133, Vocab 111, Strong Finish 101) map directly to Herringham's 12 Signature Strategies — evidence that the non-negotiable expectations are genuinely embedded in classroom practice across subjects and faculties, not just aspirational. The SEND Focus tag (40 observations) confirms that SEND-adapted delivery is being observed and recognised as strong practice, not just assumed.
-      </div>
-    </div>
-
-    <!-- MONTHLY STEPLAB DATA -->
-    <div class="section">
-      <div class="section-title">📅 Monthly Observations 2025/26 — StepLab Platform</div>
-      <div class="section-sub">Source: StepLab bulk export (16 June 2026) · September 2025 to June 2026 · June is partial (to 16th only)</div>
-
-      <div class="data-table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr><th>Month</th><th>Drop-Ins</th><th>Shoutouts</th><th>Shoutout Rate</th><th>Context</th></tr>
-          </thead>
-          <tbody>
-            <tr class="row-highlight"><td class="fw-bold">September 2025</td><td class="mono fw-bold text-blue">119</td><td class="mono fw-bold text-green">75</td><td class="mono fw-bold text-green">63%</td><td style="font-size:12px;">Strong launch to year — highest shoutout rate of any month</td></tr>
-            <tr><td class="fw-bold">October 2025</td><td class="mono fw-bold text-blue">105</td><td class="mono text-green">43</td><td class="mono text-blue">41%</td><td style="font-size:12px;">Consistent volume through half-term</td></tr>
-            <tr><td class="fw-bold">November 2025</td><td class="mono fw-bold text-blue">126</td><td class="mono text-green">56</td><td class="mono text-blue">44%</td><td style="font-size:12px;">Busiest observation month of the year</td></tr>
-            <tr><td class="fw-bold">December 2025</td><td class="mono text-blue">50</td><td class="mono text-blue">18</td><td class="mono text-blue">36%</td><td style="font-size:12px;">Reduced volume — end of term pressures</td></tr>
-            <tr><td class="fw-bold">January 2026</td><td class="mono fw-bold text-blue">125</td><td class="mono text-green">45</td><td class="mono text-blue">36%</td><td style="font-size:12px;">Strong start to spring term</td></tr>
-            <tr><td class="fw-bold">February 2026</td><td class="mono text-blue">67</td><td class="mono text-green">39</td><td class="mono text-green">58%</td><td style="font-size:12px;">High shoutout rate — quality consistent</td></tr>
-            <tr><td class="fw-bold">March 2026</td><td class="mono fw-bold text-blue">92</td><td class="mono text-green">38</td><td class="mono text-blue">41%</td><td style="font-size:12px;">Strong exam-preparation period</td></tr>
-            <tr><td class="fw-bold">April 2026</td><td class="mono text-blue">52</td><td class="mono text-green">33</td><td class="mono text-green">63%</td><td style="font-size:12px;">High shoutout rate — focus on exam class support</td></tr>
-            <tr><td class="fw-bold">May 2026</td><td class="mono text-blue">41</td><td class="mono text-green">22</td><td class="mono text-green">54%</td><td style="font-size:12px;">GCSE exam season — observation focus on non-exam classes</td></tr>
-            <tr><td class="fw-bold">June 2026 (to 16th)</td><td class="mono text-muted">19</td><td class="mono text-green">8</td><td class="mono text-blue">42%</td><td style="font-size:12px;">Partial month only — end of academic year</td></tr>
-            <tr class="row-highlight"><td class="fw-bold text-navy">Full Year Total (to date)</td><td class="mono fw-bold text-green">796</td><td class="mono fw-bold text-green">377</td><td class="mono fw-bold text-green">47%</td><td style="font-size:12px;">Best shoutout rate in the school's StepLab history</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- STAFF DEVELOPMENT PROGRAMMES -->
-    <div class="section">
-      <div class="section-title">🎓 Staff Development Programmes 2025/26</div>
-      <div class="section-sub">Structured development for early career teachers and school-based trainees — all supported with in-house coaching</div>
-
-      <div class="data-table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr><th>Programme</th><th>Number of Staff</th><th>What it involves</th><th>In-House Coach</th></tr>
-          </thead>
-          <tbody>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">SIT (School-Based ITT)</td>
-              <td class="mono fw-bold text-blue">4</td>
-              <td style="font-size:12px;">School-based initial teacher training — full teaching qualification in school</td>
-              <td style="font-size:12px;">ARS, NHT — dedicated in-house coaches</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">ECT Year 1</td>
-              <td class="mono fw-bold text-green">4</td>
-              <td style="font-size:12px;">Early Career Teacher, first year — statutory induction programme</td>
-              <td style="font-size:12px;">EHU, ASN, ARS, LKY — each ECT1 assigned a lead coach</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">ECT Year 2</td>
-              <td class="mono fw-bold text-green">2</td>
-              <td style="font-size:12px;">Early Career Teacher, second year — completing statutory induction</td>
-              <td style="font-size:12px;">AML, KHY — coached to completion</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Teaching Apprenticeship</td>
-              <td class="mono fw-bold text-blue">2</td>
-              <td style="font-size:12px;">Degree apprenticeship route into teaching — earn while learning</td>
-              <td style="font-size:12px;">DZE, STN — structured school-based support</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Degree/SIT programme (DegreeITT)</td>
-              <td class="mono fw-bold text-purple">15</td>
-              <td style="font-size:12px;">Longer-term structured development: coaching, CPD modules, deliberate practice, Steplab, video reflection, presentation to SLT</td>
-              <td style="font-size:12px;">Individual coaching relationships across all faculties</td>
-            </tr>
-            <tr class="row-subhead">
-              <td colspan="4">External CPD 2024/25 — notable programmes</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">Certificate in Coaching Leadership</td>
-              <td class="mono text-blue">1</td>
-              <td style="font-size:12px;">External accredited coaching qualification</td>
-              <td style="font-size:12px;">—</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">NPQLT Facilitator (NIoT / Harris)</td>
-              <td class="mono text-blue">1</td>
-              <td style="font-size:12px;">National Professional Qualification for Leading Teaching — facilitator role</td>
-              <td style="font-size:12px;">—</td>
-            </tr>
-            <tr>
-              <td class="fw-bold">PhD (started August 2024)</td>
-              <td class="mono text-purple">1</td>
-              <td style="font-size:12px;">Doctoral research — academic-practitioner route</td>
-              <td style="font-size:12px;">—</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- COACHING IMPACT 2023/24 -->
-    <div class="section">
-      <div class="section-title">🏆 StepLab Coaching — 2023/24 Impact Data</div>
-      <div class="section-sub">Source: Herringham SEF 2025/26 · Prior-year coaching outcomes underpinning the 2025/26 figures</div>
-      <div class="metrics-grid">
-        <div class="metric-card mc-green">
-          <div class="metric-label">Feedback Pieces 2023/24</div>
-          <div class="metric-value mv-green">1,600+</div>
-          <div class="metric-plain-label mpl-green">Via StepLab coaching model</div>
-          <div class="metric-vs">22 coaches trained · 37 colleagues benefiting</div>
-          <div class="metric-idsr">100% of coached staff demonstrated improved practice</div>
-        </div>
-        <div class="metric-card mc-blue">
-          <div class="metric-label">Vocab Acquisition</div>
-          <div class="metric-value mv-blue">100%</div>
-          <div class="metric-plain-label mpl-blue">Of deep dives 2023/24</div>
-          <div class="metric-vs">Up from 79% in 2022/23</div>
-          <div class="metric-idsr">Embedded across all subjects — whole-school literacy strategy</div>
-        </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Coached Staff Improved</div>
-          <div class="metric-value mv-green">100%</div>
-          <div class="metric-plain-label mpl-green">2023/24 coaching cohort</div>
-          <div class="metric-vs">Evidenced through drop-in data and StepLab records</div>
-          <div class="metric-idsr">Systematic improvement — not individual or accidental</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- READING PROVISION - FULL DATA -->
-    <div class="section">
-      <div class="section-title">📖 Literacy &amp; Reading Programme 2025/26</div>
-      <div class="section-sub">Source: Literacy &amp; Reading Impact Report 2025/26 (T. Reynolds &amp; D. Bedford) · September 2025 – January 2026 · Linked to Development Plan Strand 1</div>
-
-      <!-- HEADLINE READING AGE DATA -->
-      <div class="dark-callout">
-        <h3>📚 Reading Age Acceleration — The Headline Story</h3>
-        <p>Sparx Reader standardised testing at start of year and at two strategic review points. Data shows exceptional reading age acceleration across Years 7, 8 and 9.</p>
-        <div class="dark-points">
-          <div class="dark-point">
-            <div class="dark-point-label">Year 7 ⭐</div>
-            <div class="dark-point-stat">0 → +15 months</div>
-            <div class="dark-point-text">Year 7 entered September 2025 reading exactly at their actual age (11y 6m). By January 2026 — just 4 months later — the cohort average reading age was <strong>15 months ahead</strong> of actual age (13y 1m vs 11y 10m). Extraordinary acceleration in a single term.</div>
-          </div>
-          <div class="dark-point">
-            <div class="dark-point-label">Year 8</div>
-            <div class="dark-point-stat">−3 → +8 months</div>
-            <div class="dark-point-text">Year 8 began Year 8 (Sept 2024) reading <em>below</em> their actual age by 3 months. By January 2026 they are <strong>8 months ahead</strong> of actual age — a full 11-month improvement over 18 months of the programme.</div>
-          </div>
-          <div class="dark-point">
-            <div class="dark-point-label">Year 9</div>
-            <div class="dark-point-stat">−1 → +7 months</div>
-            <div class="dark-point-text">Year 9 entered secondary school (Sept 2023) reading 1 month below actual age. By September 2026 they are <strong>7 months ahead</strong> of actual age — a sustained 8-month improvement across 3 years of the programme.</div>
-          </div>
-          <div class="dark-point">
-            <div class="dark-point-label">Thinking Reading</div>
-            <div class="dark-point-stat">3–3.5 years progress</div>
-            <div class="dark-point-text">Every Thinking Reading cohort since September 2025 has made 2.5–3.5 years of reading progress. 100% of September starters made 3+ years progress. 100% of October starters have graduated. 52% of all TR pupils since September have now graduated from the programme.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- READING METRICS -->
-      <div class="metrics-grid" style="margin-top:16px;">
-        <div class="metric-card mc-green">
-          <div class="metric-label">Sparx Reader — Hours</div>
-          <div class="metric-value mv-green">3,204</div>
-          <div class="metric-plain-label mpl-green">Hours of careful reading</div>
-          <div class="metric-vs">Since September 2025 · Y8 and Y9</div>
-          <div class="metric-idsr">2,416 books completed · 75–78% hitting weekly targets</div>
-        </div>
-        <div class="metric-card mc-blue">
-          <div class="metric-label">Bedrock Vocabulary</div>
-          <div class="metric-value mv-blue">17%</div>
-          <div class="metric-plain-label mpl-blue">Vocabulary improvement (pre/post)</div>
-          <div class="metric-vs">All Year 7 · 90% completing at least one lesson/week</div>
-          <div class="metric-idsr">78% regularly reaching 20-point weekly goal</div>
-        </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Literature Lounge</div>
-          <div class="metric-value mv-green">4,632</div>
-          <div class="metric-plain-label mpl-green">Engagements in Term 1 alone</div>
-          <div class="metric-vs">106 individual pupils · 46 disadvantaged · 18 SEND · 34 EAL</div>
-          <div class="metric-idsr">Dedicated reading space at break and lunch — voluntary engagement</div>
-        </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Thinking Reading</div>
-          <div class="metric-value mv-green">100%</div>
-          <div class="metric-plain-label mpl-green">Of every cohort made 2.5+ yrs progress</div>
-          <div class="metric-vs">25 pupils on programme · 9 graduated since September</div>
-          <div class="metric-idsr">10 pupils made 2 years+ progress · 12 remain on programme</div>
-        </div>
-        <div class="metric-card mc-blue">
-          <div class="metric-label">Reading Rulers</div>
-          <div class="metric-value mv-blue">100%</div>
-          <div class="metric-plain-label mpl-blue">Of English reading lessons observed</div>
-          <div class="metric-vs">Y7, Y8 and Y9 across all subjects</div>
-          <div class="metric-idsr">Accountability strategy — no opt-out from active reading engagement</div>
-        </div>
-        <div class="metric-card mc-green">
-          <div class="metric-label">Pupil Voice — Reading</div>
-          <div class="metric-value mv-green">65–89%</div>
-          <div class="metric-plain-label mpl-green">Positive pupil feedback</div>
-          <div class="metric-vs">Y7: 65% very good/excellent · Y8: 58% very good/excellent</div>
-          <div class="metric-idsr">76–89% reported improved confidence in reading skills</div>
-        </div>
-      </div>
-
-      <!-- READING AGE TABLE -->
-      <div class="data-table-wrap" style="margin-top:16px;">
-        <table class="data-table">
-          <thead>
-            <tr><th>Year Group</th><th>Start Point</th><th>Actual Age</th><th>Reading Age</th><th>Months ahead/behind</th><th>Latest (Jan 2026)</th><th>Reading Age Jan 26</th><th>Change</th></tr>
-          </thead>
-          <tbody>
-            <tr class="row-highlight">
-              <td class="fw-bold text-navy">Year 7 ⭐</td>
-              <td>Sep 2025</td><td class="mono">11y 6m</td><td class="mono">11y 6m</td>
-              <td class="mono text-muted">0 months</td>
-              <td class="mono">Jan 2026</td><td class="mono fw-bold text-green">13y 1m</td>
-              <td class="fw-bold text-green">+15 months ahead ⭐</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Year 8</td>
-              <td>Sep 2024</td><td class="mono">11y 6m</td><td class="mono text-red">11y 3m</td>
-              <td class="mono text-red">−3 months</td>
-              <td class="mono">Jan 2026</td><td class="mono fw-bold text-green">13y 6m</td>
-              <td class="fw-bold text-green">+8 months ahead</td>
-            </tr>
-            <tr>
-              <td class="fw-bold text-navy">Year 9</td>
-              <td>Sep 2023</td><td class="mono">11y 6m</td><td class="mono text-amber">11y 5m</td>
-              <td class="mono text-amber">−1 month</td>
-              <td class="mono">Sep 2026*</td><td class="mono fw-bold text-green">14y 5m</td>
-              <td class="fw-bold text-green">+7 months ahead</td>
-            </tr>
-          </tbody>
-        </table>
-        <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">*Year 9 September 2026 data projected — pupils tracked across 3 academic years from Year 7 entry. All data from Sparx Reader standardised reading test.</div>
-      </div>
-
-      <!-- READING PROGRAMMES OVERVIEW -->
-      <div class="narrative-grid" style="margin-top:16px;">
-        <div class="narrative-card nc-green">
-          <div class="nc-eyebrow">📚 Reading Curriculum Y7 &amp; Y8</div>
-          <div class="nc-stat">3–4 wks/term</div>
-          <div class="nc-title">Dedicated curriculum reading time — Faster Read and Reading Reconsidered</div>
-          <div class="nc-text">Three to four weeks of curriculum time each term dedicated to whole-class reading in Y7 and Y8. Strategies from the Faster Read project and Doug Lemov's Reading Reconsidered. Whole cohort reads the same text — deliberate, shared literary culture. Summaries sent to parents and staff to encourage dialogue. Y7 rated 65% very good/excellent; 85% said it developed their understanding of the theme.</div>
-        </div>
-        <div class="narrative-card nc-blue">
-          <div class="nc-eyebrow">🎓 Thinking Reading Intervention</div>
-          <div class="nc-stat">100% progress</div>
-          <div class="nc-title">Every cohort achieving 2.5–3.5 years of reading progress</div>
-          <div class="nc-text">25 pupils (15 Y7, 5 Y8, 2 Y9, 1 Y10, 1 Y11) on the Thinking Reading programme. Three 30-minute sessions per week — systematic phonics followed by precision reading. Every cohort since September 2025 has made 2.5 years+ progress. 9 pupils have graduated, 10 have made 2+ years progress. 52% of all TR pupils since September have graduated.</div>
-        </div>
-        <div class="narrative-card nc-purple">
-          <div class="nc-eyebrow">👥 Peer Reading Mentors</div>
-          <div class="nc-stat">Y9 → Y7</div>
-          <div class="nc-title">Older pupils trained as reading mentors for struggling Year 7 readers</div>
-          <div class="nc-text">Year 9 pupils trained as reading mentors for Year 7 pupils identified with fluency difficulties. Daily sessions during PAD for 6 weeks. High-achieving Y10 also acting as mentors. Some pupils showing remarkable individual gains — one pupil improved from 7y 9m to 9y 9m (24 months progress) in a single intervention cycle. Benefits both mentors and mentees — peer leadership and academic confidence built simultaneously.</div>
-        </div>
-        <div class="narrative-card nc-green">
-          <div class="nc-eyebrow">🌐 Digital Platforms</div>
-          <div class="nc-stat">Sparx + Bedrock</div>
-          <div class="nc-title">3,204 hours reading · 2,416 books · 17% vocabulary gain</div>
-          <div class="nc-text">Sparx Reader used as weekly homework for Y8 and Y9 — personalised to reading level, with integrated comprehension questions. Y8 75% and Y9 78% hitting weekly targets. Since September: 3,204 hours of careful reading and 2,416 books completed. Bedrock Learning for all Y7 — 90% completing at least one lesson weekly, 17% vocabulary improvement in Term 1 pre/post testing.</div>
-        </div>
-      </div>
-
-      <div class="info-box ib-green">
-        <strong>KS2 entry context:</strong> Herringham's Year 7 entry cohort (KS2 data) shows PP pupils achieving 74% EXS in reading vs national PP 63% — <strong>11pp above national PP peers on entry</strong>. SEND pupils achieving 49% EXS vs national SEND 42%. This means incoming disadvantaged and SEND pupils are already stronger readers than their national peers — the school's primary-secondary literacy partnership and GLC trust-wide strategy is evidently working before pupils even arrive at Herringham.
-      </div>
-    </div>
-
-    <!-- SIGNATURE STRATEGIES LINK -->
-    <div class="section">
-      <div class="section-title">🎯 The Model — Signature Strategies &amp; StepLab</div>
-      <div class="narrative-grid">
-        <div class="narrative-card nc-blue">
-          <div class="nc-eyebrow">🏗️ The Approach</div>
-          <div class="nc-stat">StepLab</div>
-          <div class="nc-title">In-house deliberate practice coaching model</div>
-          <div class="nc-text">Herringham runs StepLab in-house — teachers identify a specific action step, practise it deliberately with support from their coach, record progress, and move to the next step when secure. STEPS achieved are tracked weekly across the whole school. The model avoids generic CPD in favour of precise, teacher-specific development targeted at the exact skill being practised.</div>
-        </div>
-        <div class="narrative-card nc-green">
-          <div class="nc-eyebrow">📋 12 Signature Strategies</div>
-          <div class="nc-stat">Non-negotiable</div>
-          <div class="nc-title">Shared language and practice across all subjects</div>
-          <div class="nc-text">Herringham's 12 Signature Strategies are non-negotiable expectations in every classroom — including strong start, strong finish, mini-whiteboards (MWB), talk partners (T&amp;T), guided silence, vocabulary acquisition, participation ratio, and SEND-adapted delivery. Drop-in observations specifically look for these strategies and the pathway code reflects how well they are embedded.</div>
-        </div>
-        <div class="narrative-card nc-purple">
-          <div class="nc-eyebrow">👥 Peer Coaching</div>
-          <div class="nc-stat">33 coaches</div>
-          <div class="nc-title">Faculty-embedded coaching relationships</div>
-          <div class="nc-text">33 lead coaches are identified across all faculties. Each coaches 1–3 colleagues in deliberate practice cycles. Coaches themselves are supported by the T&amp;L team and SLT. This creates a self-sustaining development culture where improvement is driven by peers within the same subject context, not only by external or top-down direction.</div>
-        </div>
-        <div class="narrative-card nc-amber">
-          <div class="nc-eyebrow">💬 Staff Mentoring</div>
-          <div class="nc-stat">14 on register</div>
-          <div class="nc-title">Targeted mentoring for specific development needs</div>
-          <div class="nc-text">14 staff are on the formal mentoring register in 2025/26, with foci including middle leader development, pastoral skills, whole-academy leadership, and personal skill building. Mentoring sits alongside coaching as a parallel strand — coaching is practice-focused, mentoring is professionally-focused.</div>
-        </div>
+      <div class="section-title">📚 Teaching &amp; Learning — Awaiting Evidence</div>
+      <div class="section-sub">This tab maps to the SEF's "Curriculum and Teaching" evaluation area. Upload lesson observation summaries, learning walk records, curriculum documents, or CPD/coaching data and this tab will be populated.</div>
+      <div class="info-box ib-blue">
+        <strong>What would help populate this tab:</strong> lesson observation or learning walk summaries, curriculum overview documents, CPD or coaching programme data, subject leader reports, book look / work scrutiny findings.
       </div>
     </div>
 
@@ -6817,69 +5536,36 @@ ${body}
 
       case 'attendance':
         html = `<div class="page">
-          ${hdr('Attendance Report', 'DfE Monitor Your School · Similar Schools Autumn 2025/26 · To 12 June 2026', date, 'Attendance Report')}
-          <div class="sh">Current Year Headline — To 12 June 2026</div>
+          ${hdr('Attendance Report', 'Ofsted IDSR June 2026 · DfE 2025/26 daily attendance collection', date, 'Attendance Report')}
+          <div class="sh">Current Year Headline — 2025/26 (4 half terms)</div>
           <div class="sg sg-4 mb8">
-            <div class="sb sb-g"><div class="sl">Overall Attendance</div><div class="sv sv-g">93.2%</div><div class="sn">National: 92.1%</div><span class="stag tg">2nd of 21 similar</span></div>
-            <div class="sb sb-g"><div class="sl">SEN Attendance</div><div class="sv sv-g">90.6%</div><div class="sn">Similar median: 84.3%</div><span class="stag tg">#1 of 21 ⭐</span></div>
-            <div class="sb sb-g"><div class="sl">FSM Attendance</div><div class="sv sv-g">90.7%</div><div class="sn">Similar median: 87.0%</div><span class="stag tg">+3.7pp above</span></div>
-            <div class="sb sb-b"><div class="sl">Persistent Absence</div><div class="sv sv-b">19.0%</div><div class="sn">Similar median: 25.7%</div><span class="stag tb">3rd of 21</span></div>
+            <div class="sb sb-b"><div class="sl">All Pupils Attendance</div><div class="sv sv-b">94.2%</div><div class="sn">National: 94.9%</div><span class="stag tb">Close to average</span></div>
+            <div class="sb sb-b"><div class="sl">SEN Attendance</div><div class="sv sv-b">92.7%</div><div class="sn">National: 92.3%</div><span class="stag tb">Close to average</span></div>
+            <div class="sb sb-b"><div class="sl">FSM Attendance</div><div class="sv sv-b">92.2%</div><div class="sn">National: 92.2%</div><span class="stag tb">In line with national</span></div>
+            <div class="sb sb-r"><div class="sl">Persistent Absence (24/25)</div><div class="sv sv-r">23.5%</div><div class="sn">National: 13.0%</div><span class="stag ta">Above (sig+) ⚠️</span></div>
           </div>
-          <div class="sh">vs Similar Schools — Autumn 2025/26 (DfE matched group)</div>
+          <div class="sh">Overall Attendance — 3-Year Trend (with 2018/19 baseline)</div>
           <table class="dt mb8">
-            <thead><tr><th>Pupil Group</th><th>Herringham</th><th>Similar Schools Median</th><th>Difference</th><th>DfE Finding</th></tr></thead>
+            <thead><tr><th>Year</th><th>All Pupils</th><th>FSM6</th><th>SEN</th><th>National</th><th>Banding</th></tr></thead>
             <tbody>
-              <tr class="hi"><td class="fw">All Pupils</td><td class="mono cg fw">92.9%</td><td class="mono cm">90.9%</td><td class="cg fw">+2.0pp</td><td style="font-size:7.5pt;">Ranked 2nd of 21</td></tr>
-              <tr><td class="fw">FSM Pupils</td><td class="mono cg fw">90.7%</td><td class="mono cm">87.0%</td><td class="cg fw">+3.7pp</td><td style="font-size:7.5pt;">Above similar schools</td></tr>
-              <tr><td class="fw">Non-FSM</td><td class="mono cg fw">94.5%</td><td class="mono cm">93.6%</td><td class="cg fw">+0.9pp</td><td style="font-size:7.5pt;">Above similar schools</td></tr>
-              <tr class="hi"><td class="fw">SEN Pupils ⭐</td><td class="mono cg fw">90.6%</td><td class="mono cm">84.3%</td><td class="cg fw">+6.3pp</td><td style="font-size:7.5pt;"><strong>#1 of 21 — DfE Relative Strength</strong></td></tr>
-              <tr><td class="fw">Non-SEN</td><td class="mono cg fw">93.5%</td><td class="mono cm">92.6%</td><td class="cg fw">+0.9pp</td><td style="font-size:7.5pt;">Above similar schools</td></tr>
+              <tr><td class="fw">2018/19</td><td class="mono">95.4%</td><td class="mono">94.5%</td><td class="mono">94.8%</td><td class="mono cm">96.0%</td><td style="font-size:7.5pt;">Below</td></tr>
+              <tr><td class="fw">2022/23</td><td class="mono">93.6%</td><td class="mono">91.9%</td><td class="mono">92.6%</td><td class="mono cm">94.1%</td><td style="font-size:7.5pt;">Close to average</td></tr>
+              <tr><td class="fw">2023/24</td><td class="mono">93.5%</td><td class="mono">91.2%</td><td class="mono">91.6%</td><td class="mono cm">94.5%</td><td style="font-size:7.5pt;">Below</td></tr>
+              <tr class="hi"><td class="fw">2024/25</td><td class="mono ca fw">92.8%</td><td class="mono ca fw">90.3%</td><td class="mono ca fw">89.7%</td><td class="mono cm">94.8%</td><td style="font-size:7.5pt;">Below</td></tr>
             </tbody>
           </table>
-          <div class="sh">Year-on-Year Term Comparison</div>
+          <div class="sh">Persistent Absence — 3-Year Trend</div>
           <table class="dt mb8">
-            <thead><tr><th>Term</th><th>Attendance 2024/25</th><th>Attendance 2025/26</th><th>Change</th><th>Absence 2025/26</th><th>Unauth. 2025/26</th></tr></thead>
+            <thead><tr><th>Year</th><th>All Pupils</th><th>FSM6</th><th>SEN</th><th>National</th><th>Banding</th></tr></thead>
             <tbody>
-              <tr><td class="fw">Autumn</td><td class="mono">93.0%</td><td class="mono cb fw">92.9%</td><td class="ca fw">−0.1pp</td><td class="mono">7.1%</td><td class="mono">5.5%</td></tr>
-              <tr class="hi"><td class="fw">Spring</td><td class="mono">92.4%</td><td class="mono cg fw">93.2%</td><td class="cg fw">+0.8pp ↑</td><td class="mono cg">6.8%</td><td class="mono cg">5.0%</td></tr>
-              <tr class="hi"><td class="fw">Summer</td><td class="mono">93.1%</td><td class="mono cg fw">93.8%</td><td class="cg fw">+0.7pp ↑</td><td class="mono cg">6.2%</td><td class="mono cg">4.3%</td></tr>
-              <tr><td class="fw">Full Year</td><td class="mono">92.8%</td><td class="mono cg fw">93.2%</td><td class="cg fw">+0.4pp ↑</td><td class="mono cg">6.8%</td><td class="mono cg">5.1%</td></tr>
+              <tr><td class="fw">2018/19</td><td class="mono">10.9%</td><td class="mono">17.3%</td><td class="mono">13.5%</td><td class="mono cm">8.2%</td><td style="font-size:7.5pt;">Above (non-sig)</td></tr>
+              <tr><td class="fw">2022/23</td><td class="mono cr">20.6%</td><td class="mono cr">29.7%</td><td class="mono cr">23.7%</td><td class="mono cm">16.2%</td><td style="font-size:7.5pt;">Above (sig+)</td></tr>
+              <tr><td class="fw">2023/24</td><td class="mono cr">22.3%</td><td class="mono cr">37.4%</td><td class="mono cr">36.7%</td><td class="mono cm">14.6%</td><td style="font-size:7.5pt;">Above (sig+)</td></tr>
+              <tr class="hi"><td class="fw">2024/25</td><td class="mono cr fw">23.5%</td><td class="mono cr fw">33.5%</td><td class="mono cr fw">36.3%</td><td class="mono cm">13.0%</td><td style="font-size:7.5pt;"><strong>Above (sig+)</strong></td></tr>
             </tbody>
           </table>
-          <div class="ib ib-g"><strong>DfE Similar Schools report finding (Autumn 2025/26):</strong> Herringham ranked 2nd of 21 similar schools for overall attendance. SEN attendance higher than all 20 similar schools — rated DfE Relative Strength for two consecutive periods. <strong>Zero areas to focus on</strong> (most schools receive 3). School exceeds its ABIE (92.8%) — current attendance 93.2%.</div>
-          ${ft('Attendance Report', 'DfE Monitor Your School · Similar Schools Autumn 25/26')}
-        </div>`;
-        break;
-
-      case 'similar':
-        html = `<div class="page">
-          ${hdr('Similar Schools — National Comparisons', 'DfE KS4 2024/25 · 4,067 state-funded schools', date, 'Similar Schools Report')}
-          <div class="sh">National Percentile Position</div>
-          <div class="sg sg-4 mb8">
-            <div class="sb sb-b"><div class="sl">A8 — All State Schools</div><div class="sv sv-b">55th</div><div class="sn">Percentile · A8: 46.1</div><span class="stag tb">Above half nationally</span></div>
-            <div class="sb sb-g"><div class="sl">A8 — Similar Schools (366)</div><div class="sv sv-g">79th</div><div class="sn">Peer group mean: 41.3</div><span class="stag tg">Top 21% of peers</span></div>
-            <div class="sb sb-g"><div class="sl">EM 5+ — All State</div><div class="sv sv-g">64th</div><div class="sn">48.2% vs national 45.4%</div><span class="stag tg">Top third nationally</span></div>
-            <div class="sb sb-g"><div class="sl">EM 5+ — Similar Schools</div><div class="sv sv-g">84th</div><div class="sn">Peer group mean: 35.4%</div><span class="stag tg">Top sixth of peers ⭐</span></div>
-          </div>
-          <div class="sh">Thurrock Schools — A8 Ranking 2024/25</div>
-          <table class="dt mb8">
-            <thead><tr><th>School</th><th>A8</th><th>EM 5+</th><th>FSM6 %</th><th>P8 (2023/24)</th></tr></thead>
-            <tbody>
-              <tr><td class="fw">Grays Convent High School</td><td class="mono cg fw">55.7</td><td class="mono cg">61.3%</td><td class="mono cm">16.1%</td><td class="mono cg">+0.76</td></tr>
-              <tr><td class="fw">Harris Academy Chafford Hundred</td><td class="mono cg fw">55.5</td><td class="mono cg">68.1%</td><td class="mono cm">10.1%</td><td class="mono cg">+1.04</td></tr>
-              <tr><td class="fw">Harris Academy Riverside</td><td class="mono cb">47.9</td><td class="mono cb">45.3%</td><td class="mono">26.5%</td><td class="mono cg">+0.23</td></tr>
-              <tr><td class="fw">Harris Academy Ockendon</td><td class="mono cb">47.3</td><td class="mono cb">49.4%</td><td class="mono">24.9%</td><td class="mono cg">+0.46</td></tr>
-              <tr><td class="fw">Thames Park Secondary</td><td class="mono cb">46.4</td><td class="mono cb">54.1%</td><td class="mono">27.9%</td><td class="mono cm">n/a</td></tr>
-              <tr class="gw"><td class="fw">🏫 Herringham Primary Academy</td><td class="mono cb fw">46.1</td><td class="mono cb">48.2%</td><td class="mono cr fw">40.6%*</td><td class="mono cg">+0.07</td></tr>
-              <tr><td class="fw">Ortu Gable Hall</td><td class="mono cb">45.8</td><td class="mono cb">43.9%</td><td class="mono">19.4%</td><td class="mono ca">−0.51</td></tr>
-              <tr><td class="fw">Ortu Hassenbrook</td><td class="mono ca">43.8</td><td class="mono ca">43.8%</td><td class="mono ca">35.2%</td><td class="mono cr">−0.76</td></tr>
-              <tr><td class="fw">Ormiston Park Academy</td><td class="mono cr">37.5</td><td class="mono cr">28.3%</td><td class="mono cr">39.4%</td><td class="mono cr">−0.73</td></tr>
-            </tbody>
-          </table>
-          <div class="ib ib-b" style="font-size:7.5pt;">* Herringham FSM6: 40.6% whole-school (IDSR). 38.6% KS4 cohort (DfE table). Both figures are the highest or near-highest FSM rate of any mainstream Thurrock secondary. All schools above Herringham have FSM rates of 10–28%.</div>
-          <div class="sh">National Peer Group — Similar Academies (FSM≥30%, 150–350 pupils)</div>
-          <div class="ib ib-g">366 schools nationally match Herringham's profile. Their A8 mean is 41.3 — Herringham scores 46.1, placing it in the <strong>79th percentile</strong> of this group. EM5+ mean for the group is 35.4% — Herringham at 48.2% places it in the <strong>84th percentile</strong>. Many of the schools above Herringham are London academies benefiting from the London Challenge legacy effect. Among non-London comparable schools, Herringham's position is even stronger.</div>
-          ${ft('Similar Schools Report', 'DfE KS4 2024/25 final')}
+          <div class="ib ib-a"><strong>Priority for improvement:</strong> Persistent absence has been statistically significantly above the national average (Above sig+) for 3 consecutive years and has more than doubled since the 2018/19 pre-pandemic baseline (10.9% → 23.5%). SEN persistent absence (36.3% in 2024/25) is a particular concern. This is the top development priority identified in the IDSR.</div>
+          ${ft('Attendance Report', 'Ofsted IDSR June 2026')}
         </div>`;
         break;
 
@@ -7067,44 +5753,6 @@ ${body}
         </div>`;
         break;
 
-      case 'destinations':
-        html = `<div class="page">
-          ${hdr('Destinations &amp; Careers Report', 'Destinations tracking data · Careers Activities 2025/26 · Easter 2026 snapshot', date, 'Destinations &amp; Careers')}
-          <div class="sh">Post-16 Destinations — Key Indicators</div>
-          <div class="sg sg-4 mb8">
-            <div class="sb sb-g"><div class="sl">In Education/Training (23/24)</div><div class="sv sv-g">84%</div><div class="sn">229 tracked leavers</div><span class="stag tg">78% ed · 6% apprentice</span></div>
-            <div class="sb sb-g"><div class="sl">Applied by Easter (Y11)</div><div class="sv sv-g">84%</div><div class="sn">162 of 192 pupils</div><span class="stag tg">Before GCSE results</span></div>
-            <div class="sb sb-g"><div class="sl">Conditional Offers (Y11)</div><div class="sv sv-g">73%</div><div class="sn">141 of 192 pupils</div><span class="stag tg">Secured before exams</span></div>
-            <div class="sb sb-g"><div class="sl">Planning Ed/Training (25/26)</div><div class="sv sv-g">88%</div><div class="sn">205 intended responses</div><span class="stag tg">Only 1% no training</span></div>
-          </div>
-          <div class="sh">Intended Destinations 2025/26 Y11 (n=205)</div>
-          <table class="dt mb8">
-            <thead><tr><th>Destination</th><th>Number</th><th>%</th></tr></thead>
-            <tbody>
-              <tr class="hi"><td class="fw">College / Training Provider</td><td class="mono cg fw">92</td><td class="mono">45%</td></tr>
-              <tr class="hi"><td class="fw">Sixth Form (other school)</td><td class="mono cg">65</td><td class="mono">32%</td></tr>
-              <tr><td class="fw">Apprenticeship</td><td class="mono cb">22</td><td class="mono">11%</td></tr>
-              <tr><td class="fw">Undecided</td><td class="mono cm">21</td><td class="mono">10%</td></tr>
-              <tr><td class="fw">Employment / Other</td><td class="mono cm">5</td><td class="mono">2%</td></tr>
-              <tr class="sub"><td>Education or training</td><td class="mono cg fw">179</td><td class="mono cg fw">88%</td></tr>
-            </tbody>
-          </table>
-          <div class="sh">University Aspirations (2023 Leavers Survey — n=17, illustrative)</div>
-          <div class="ib ib-b">Confirmed university destinations include: <strong>Imperial College London</strong> (Chemical Engineering), Queen Mary's University (Neuroscience), Royal Holloway (Drama), University of Kent (Law), City St George's University, University of Law (LLB Hons), Anglia Ruskin (Civil Engineering), London South Bank (Architecture). In a community where higher education participation is historically low, these destinations reflect genuine social mobility outcomes. Note: small voluntary sample — aspirational, not census data.</div>
-          <div class="sh">Careers Programme — Gatsby Benchmark Coverage 2025/26</div>
-          <table class="dt mb8">
-            <thead><tr><th>Year Group</th><th>Key Provision</th><th>Employer / Institution Contacts</th></tr></thead>
-            <tbody>
-              <tr><td class="fw">Y7–Y9</td><td style="font-size:7.5pt;">Unifrog weekly, Aspirations Survey, Careers Fair (March), National Apprenticeship Week, National Careers Week, PAD careers sessions, Lower Thames Crossing trip, DWP/ARU assemblies, Youth Parliament</td><td style="font-size:7.5pt;">DWP, Anglia Ruskin, Lower Thames Crossing, Barking Abbey</td></tr>
-              <tr class="hi"><td class="fw">Y10</td><td style="font-size:7.5pt;">Work experience (1 week, June), Mock Interview Day (July), Next Steps Evening, NHS Careers trip, Gear Up Easter School, CV writing, interview technique, apprenticeship fair</td><td style="font-size:7.5pt;">Make Happen, USP, NHS, South Essex College, Thameside Theatre</td></tr>
-              <tr class="hi"><td class="fw">Y11</td><td style="font-size:7.5pt;">Individual CIAG careers interviews (all pupils, Sep–Dec), Next Steps Evenings ×2, Careers Fair, assemblies from 6 different colleges/sixth forms</td><td style="font-size:7.5pt;">Mossbourne, Harris Chafford, Harris Riverside, South Essex College, St Clere's, USP College</td></tr>
-            </tbody>
-          </table>
-          <div class="ib ib-b" style="font-size:7.5pt;"><strong>Data note:</strong> Post-16 destination tracking relies on voluntary responses and is inherently partial. The 2023/24 figure (84%, 229 tracked) is the most complete dataset. Easter 2026 snapshot and intended destination surveys are self-reported. Full systematic tracking is an area of ongoing development.</div>
-          ${ft('Destinations &amp; Careers Report', 'Destinations Data 2023/24–2025/26 · Careers Programme 2025/26')}
-        </div>`;
-        break;
-
       case 'ofsted':
         html = `<div class="page">
           ${hdr('Ofsted Narrative — Key Talking Points', 'IDSR June 2026 · DfE KS4 2024/25', date, 'Ofsted Narrative')}
@@ -7179,74 +5827,9 @@ ${body}
 
       case 'teaching':
         html = `<div class="page">
-          ${hdr('Teaching & Learning Report', 'StepLab platform export (16 June 2026) · T&L Spreadsheet 2025/26', date, 'Teaching & Learning')}
-          <div class="sh">Headline Measures 2025/26</div>
-          <div class="sg sg-4 mb8">
-            <div class="sb sb-g"><div class="sl">Drop-In Observations</div><div class="sv sv-g">796</div><div class="sn">To 16 June 2026</div><span class="stag tg">71 staff observed</span></div>
-            <div class="sb sb-g"><div class="sl">Shoutout Rate</div><div class="sv sv-g">47%</div><div class="sn">377 of 796 drop-ins</div><span class="stag tg">Best year on record ⭐</span></div>
-            <div class="sb sb-b"><div class="sl">Flagged Observations</div><div class="sv sv-b">0</div><div class="sn">2025/26 full year</div><span class="stag tb">Quality is the baseline</span></div>
-            <div class="sb sb-g"><div class="sl">STEPS Achieved</div><div class="sv sv-g">409</div><div class="sn">All time since 2022</div><span class="stag tg">Deliberate practice</span></div>
-          </div>
-          <div class="sg sg-4 mb8">
-            <div class="sb sb-b"><div class="sl">Course Modules</div><div class="sv sv-b">1,003</div><div class="sn">48 staff · all time</div><span class="stag tb">Self-directed CPD</span></div>
-            <div class="sb sb-b"><div class="sl">Active Coaches</div><div class="sv sv-b">42</div><div class="sn">Cycle feedback sent</div><span class="stag tb">50% avg completion</span></div>
-            <div class="sb sb-b"><div class="sl">SLT Drop-Ins</div><div class="sv sv-b">478</div><div class="sn">of 796 total (60%)</div><span class="stag tb">Senior-led culture</span></div>
-            <div class="sb sb-b"><div class="sl">In Formal Programmes</div><div class="sv sv-b">12</div><div class="sn">SIT · ECT1 · ECT2 · App</div><span class="stag tb">Growing own teachers</span></div>
-          </div>
-          <div class="sh">Year-on-Year Growth (StepLab Platform)</div>
-          <table class="dt mb8">
-            <thead><tr><th>Academic Year</th><th>Drop-Ins</th><th>Shoutouts</th><th>Shoutout Rate</th><th>Trend</th></tr></thead>
-            <tbody>
-              <tr><td class="fw">2021/22</td><td class="mono cb">254</td><td class="mono">142</td><td class="mono ca">56%</td><td style="font-size:7.5pt;">Platform launch year</td></tr>
-              <tr><td class="fw">2022/23</td><td class="mono cg fw">711</td><td class="mono">148</td><td class="mono ca">21%</td><td style="font-size:7.5pt;">Volume scaled up; quality baseline recalibrated</td></tr>
-              <tr><td class="fw">2023/24</td><td class="mono cb">643</td><td class="mono">159</td><td class="mono cb">25%</td><td style="font-size:7.5pt;">Sustained practice</td></tr>
-              <tr><td class="fw">2024/25</td><td class="mono cg">773</td><td class="mono cg">299</td><td class="mono cg fw">39%</td><td style="font-size:7.5pt;">Significant quality improvement</td></tr>
-              <tr class="hi"><td class="fw">2025/26 (to date)</td><td class="mono cg fw">796</td><td class="mono cg fw">377</td><td class="mono cg fw">47% ⭐</td><td style="font-size:7.5pt;">Best shoutout rate in school history</td></tr>
-            </tbody>
-          </table>
-          <div class="sh">Monthly Observations 2025/26</div>
-          <table class="dt mb8">
-            <thead><tr><th>Month</th><th>Drop-Ins</th><th>Shoutouts</th><th>Shoutout Rate</th><th>Notes</th></tr></thead>
-            <tbody>
-              <tr class="hi"><td class="fw">September 2025</td><td class="mono cg">119</td><td class="mono cg fw">75</td><td class="mono cg fw">63%</td><td style="font-size:7.5pt;">Strong year launch</td></tr>
-              <tr><td class="fw">October 2025</td><td class="mono cb">105</td><td class="mono">43</td><td class="mono cb">41%</td><td style="font-size:7.5pt;"></td></tr>
-              <tr><td class="fw">November 2025</td><td class="mono cg fw">126</td><td class="mono">56</td><td class="mono cb">44%</td><td style="font-size:7.5pt;">Busiest month</td></tr>
-              <tr><td class="fw">December 2025</td><td class="mono cm">50</td><td class="mono">18</td><td class="mono cb">36%</td><td style="font-size:7.5pt;">End of term</td></tr>
-              <tr><td class="fw">January 2026</td><td class="mono cg">125</td><td class="mono">45</td><td class="mono cb">36%</td><td style="font-size:7.5pt;">Strong spring start</td></tr>
-              <tr><td class="fw">February 2026</td><td class="mono cb">67</td><td class="mono cg">39</td><td class="mono cg fw">58%</td><td style="font-size:7.5pt;">High quality</td></tr>
-              <tr><td class="fw">March 2026</td><td class="mono cb">92</td><td class="mono">38</td><td class="mono cb">41%</td><td style="font-size:7.5pt;"></td></tr>
-              <tr><td class="fw">April 2026</td><td class="mono cm">52</td><td class="mono cg">33</td><td class="mono cg fw">63%</td><td style="font-size:7.5pt;">Exam season focus</td></tr>
-              <tr><td class="fw">May 2026</td><td class="mono cm">41</td><td class="mono">22</td><td class="mono cg">54%</td><td style="font-size:7.5pt;">GCSE exams</td></tr>
-              <tr><td class="fw">June 2026*</td><td class="mono cm">19</td><td class="mono">8</td><td class="mono cb">42%</td><td style="font-size:7.5pt;">Partial month</td></tr>
-              <tr class="hi"><td class="fw">Full Year Total</td><td class="mono cg fw">796</td><td class="mono cg fw">377</td><td class="mono cg fw">47%</td><td style="font-size:7.5pt;">Best year in Herringham StepLab history</td></tr>
-            </tbody>
-          </table>
-          <div class="sh">Top Observation Tags 2025/26 (What's Being Seen in Lessons)</div>
-          <table class="dt mb8">
-            <thead><tr><th>Tag</th><th>Count</th><th>Signature Strategy</th><th>What it signals</th></tr></thead>
-            <tbody>
-              <tr class="hi"><td class="fw">Strong Start</td><td class="mono cg fw">133</td><td style="font-size:7.5pt;">✅ Yes</td><td style="font-size:7.5pt;">Lesson beginning routines consistently observed and celebrated</td></tr>
-              <tr class="hi"><td class="fw">Vocabulary Acquisition</td><td class="mono cg fw">111</td><td style="font-size:7.5pt;">✅ Yes</td><td style="font-size:7.5pt;">Deliberate vocabulary teaching embedded — consistent with SEND/EAL profile</td></tr>
-              <tr class="hi"><td class="fw">Strong Finish</td><td class="mono cg">101</td><td style="font-size:7.5pt;">✅ Yes</td><td style="font-size:7.5pt;">Consolidation and plenary consistently observed</td></tr>
-              <tr><td class="fw">Teacher Feedback</td><td class="mono cb">64</td><td style="font-size:7.5pt;">✅ Yes</td><td style="font-size:7.5pt;">Assessment-responsive teaching logged regularly</td></tr>
-              <tr><td class="fw">Assessment for Learning</td><td class="mono cb">58</td><td style="font-size:7.5pt;">✅ Yes</td><td style="font-size:7.5pt;">Formative assessment embedded in practice</td></tr>
-              <tr><td class="fw">SEND Focus</td><td class="mono cb">40</td><td style="font-size:7.5pt;">✅ Yes</td><td style="font-size:7.5pt;">SEND-specific strategies observed and celebrated</td></tr>
-              <tr><td class="fw">High Participation Ratio</td><td class="mono cb">40</td><td style="font-size:7.5pt;">✅ Yes</td><td style="font-size:7.5pt;">All pupils thinking and responding — core Signature Strategy</td></tr>
-            </tbody>
-          </table>
-          <div class="sh">Staff Development Programmes 2025/26</div>
-          <table class="dt mb8">
-            <thead><tr><th>Programme</th><th>Staff</th><th>What it involves</th></tr></thead>
-            <tbody>
-              <tr class="hi"><td class="fw">SIT (School-Based ITT)</td><td class="mono cg fw">4</td><td style="font-size:7.5pt;">School-based initial teacher training — full qualification in school</td></tr>
-              <tr><td class="fw">ECT Year 1</td><td class="mono cg fw">4</td><td style="font-size:7.5pt;">Early Career Teacher statutory induction — year 1</td></tr>
-              <tr><td class="fw">ECT Year 2</td><td class="mono cg">2</td><td style="font-size:7.5pt;">Early Career Teacher statutory induction — completing year 2</td></tr>
-              <tr><td class="fw">Teaching Apprenticeship</td><td class="mono cb">2</td><td style="font-size:7.5pt;">Degree apprenticeship route — earn while learning</td></tr>
-              <tr class="hi"><td class="fw">DegreeITT Structured Programme</td><td class="mono cp fw">15</td><td style="font-size:7.5pt;">Coaching, CPD modules, deliberate practice, video reflection, SLT presentation</td></tr>
-            </tbody>
-          </table>
-          <div class="ib ib-g"><strong>Key message:</strong> Herringham does not grade individual lessons. Observations are ungraded, coaching-focused, and non-threatening. The 47% shoutout rate, zero flagged observations, and rising year-on-year quality indicator together paint a picture of a teaching workforce where quality is the baseline and the model is designed to develop, not judge.</div>
-          ${ft('Teaching & Learning Report', 'StepLab platform export (16 June 2026)')}
+          ${hdr('Teaching & Learning', 'Awaiting evidence', date, 'Teaching & Learning')}
+          <div class="ib ib-b">No Herringham-specific teaching &amp; learning monitoring data has been supplied yet. This section will be completed once observation, curriculum or CPD/coaching data is provided.</div>
+          ${ft('Teaching & Learning', 'Awaiting evidence')}
         </div>`;
         break;
 
@@ -7944,81 +6527,6 @@ ${body}
     options:{ ...baseOpts, scales:{ ...baseOpts.scales, y:{ ...baseOpts.scales.y, min:55, max:90 } } }
   });
 
-  // ── CHART: STEER BIAS TYPES ──────────────────────────────────
-
-  // ── CHART: STEER PARTICIPATION GROWTH ────────────────────────
-
-  // ── CHART: DROP-IN BANDS (real StepLab data) ─────────────────
-  new Chart(document.getElementById('chartDIBands'), {
-    type: 'bar',
-    data: {
-      labels: ['0 obs', '1–4 obs', '5–9 obs', '10–14 obs', '15–19 obs', '20–49 obs', '50+ obs'],
-      datasets: [{
-        label: 'Number of staff',
-        data: [9, 2, 6, 6, 4, 42, 16],
-        backgroundColor: ['rgba(185,28,28,0.7)','rgba(180,83,9,0.7)','rgba(30,95,168,0.6)','rgba(30,95,168,0.7)','rgba(22,101,52,0.65)','rgba(22,101,52,0.8)','rgba(22,101,52,0.9)'],
-        borderColor: [RED, AMBER, BLUE, BLUE, GREEN, GREEN, GREEN],
-        borderWidth: 1.5, borderRadius: 4
-      }]
-    },
-    options: {
-      ...baseOpts,
-      plugins: { ...baseOpts.plugins, legend: { display: false } },
-      scales: {
-        x: { ...baseOpts.scales.x, ticks: { font: { size: 11 } } },
-        y: { ...baseOpts.scales.y, min: 0, max: 50 }
-      }
-    }
-  });
-
-  // ── CHART: MONTHLY DI & SHOUTOUTS (real StepLab data) ────────
-  new Chart(document.getElementById('chartWeeklyDI'), {
-    type: 'bar',
-    data: {
-      labels: ['Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun*'],
-      datasets: [
-        { label: 'Drop-ins', data: [119,105,126,50,125,67,92,52,41,19], backgroundColor: 'rgba(30,95,168,0.7)', borderColor: BLUE, borderWidth: 1.5, borderRadius: 3 },
-        { label: 'Shoutouts', data: [75,43,56,18,45,39,38,33,22,8], backgroundColor: 'rgba(22,101,52,0.8)', borderColor: GREEN, borderWidth: 1.5, borderRadius: 3 }
-      ]
-    },
-    options: { ...baseOpts, scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min: 0, max: 140 } } }
-  });
-
-  // ── CHART: SHOUTOUT DOMAINS (real StepLab data) ───────────────
-  new Chart(document.getElementById('chartPathways'), {
-    type: 'doughnut',
-    data: {
-      labels: ['Drive Thought (142)', 'Optimise Communication (127)', 'Gather & Give Feedback (80)', 'Secure Attention (76)', 'Curriculum (43)', 'Create Culture (43)'],
-      datasets: [{
-        data: [142, 127, 80, 76, 43, 43],
-        backgroundColor: ['rgba(22,101,52,0.85)','rgba(30,95,168,0.8)','rgba(109,40,217,0.75)','rgba(180,83,9,0.75)','rgba(185,28,28,0.65)','rgba(100,116,139,0.65)'],
-        borderWidth: 2, borderColor: '#fff'
-      }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: {
-        legend: { position: 'right', labels: { font: { size: 11 }, boxWidth: 12 } },
-        tooltip: { callbacks: { label: ctx => { const t = ctx.dataset.data.reduce((a,b)=>a+b,0); return ' ' + ctx.parsed + ' (' + (ctx.parsed/t*100).toFixed(0) + '%)'; } } }
-      }
-    }
-  });
-
-  // ── CHART: YEAR-ON-YEAR GROWTH (real StepLab data) ───────────
-  new Chart(document.getElementById('chartSTEPS'), {
-    type: 'bar',
-    data: {
-      labels: ['2021/22', '2022/23', '2023/24', '2024/25', '2025/26'],
-      datasets: [
-        { label: 'Drop-ins', data: [254, 711, 643, 773, 796], backgroundColor: 'rgba(30,95,168,0.7)', borderColor: BLUE, borderWidth: 1.5, borderRadius: 3 },
-        { label: 'Shoutouts', data: [142, 148, 159, 299, 377], backgroundColor: 'rgba(22,101,52,0.8)', borderColor: GREEN, borderWidth: 1.5, borderRadius: 3 }
-      ]
-    },
-    options: {
-      ...baseOpts,
-      scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min: 0, max: 900 } }
-    }
-  });
 
   // ── CHART: REWARDS TOP ITEMS ─────────────────────────────────
   new Chart(document.getElementById('chartRewardItems'), {
@@ -8079,28 +6587,28 @@ ${body}
 
   // ── CHART: ATTENDANCE TERM COMPARISON ───────────────────────
   new Chart(document.getElementById('chartAttTerm'), {
-    type:'bar',
+    type:'line',
     data:{
-      labels:['Autumn','Spring','Summer','Full Year'],
+      labels:['2018/19','2022/23','2023/24','2024/25'],
       datasets:[
-        { label:'2024/25', data:[93.0,92.4,93.1,92.8], backgroundColor:'rgba(100,116,139,0.6)', borderColor:MUTED, borderWidth:1.5, borderRadius:4 },
-        { label:'2025/26', data:[92.9,93.2,93.8,93.2], backgroundColor:'rgba(22,101,52,0.75)', borderColor:GREEN, borderWidth:1.5, borderRadius:4 }
+        { label:'Herringham', data:[95.4,93.6,93.5,92.8], borderColor:AMBER, backgroundColor:'rgba(180,83,9,0.1)', borderWidth:2.5, pointRadius:5, pointBackgroundColor:AMBER, fill:true, tension:0.3 },
+        { label:'National', data:[96.0,94.1,94.5,94.8], borderColor:MUTED, backgroundColor:'transparent', borderWidth:2, borderDash:[5,4], pointRadius:4, pointBackgroundColor:MUTED, tension:0.3 }
       ]
     },
-    options:{ ...baseOpts, scales:{ ...baseOpts.scales, y:{ ...baseOpts.scales.y, min:91.5, max:95 } } }
+    options:{ ...baseOpts, scales:{ ...baseOpts.scales, y:{ ...baseOpts.scales.y, min:90, max:97 } } }
   });
 
-  // ── CHART: ATTENDANCE VS SIMILAR SCHOOLS BY GROUP ────────────
+  // ── CHART: PERSISTENT ABSENCE 2024/25 BY PUPIL GROUP ─────────
   new Chart(document.getElementById('chartAttGroups'), {
     type:'bar',
     data:{
-      labels:['All Pupils','FSM Pupils','No FSM','SEN Pupils','No SEN'],
+      labels:['All Pupils','FSM6','SEN'],
       datasets:[
-        { label:'Herringham 2025/26', data:[92.9,90.7,94.5,90.6,93.5], backgroundColor:'rgba(22,101,52,0.75)', borderColor:GREEN, borderWidth:1.5, borderRadius:4 },
-        { label:'Similar Schools Median', data:[90.9,87.0,93.6,84.3,92.6], backgroundColor:'rgba(100,116,139,0.5)', borderColor:MUTED, borderWidth:1.5, borderRadius:4 }
+        { label:'Herringham 2024/25', data:[23.5,33.5,36.3], backgroundColor:'rgba(185,28,28,0.75)', borderColor:RED, borderWidth:1.5, borderRadius:4 },
+        { label:'National', data:[13.0,24.9,22.4], backgroundColor:'rgba(100,116,139,0.5)', borderColor:MUTED, borderWidth:1.5, borderRadius:4 }
       ]
     },
-    options:{ ...baseOpts, scales:{ ...baseOpts.scales, y:{ ...baseOpts.scales.y, min:80, max:97 } } }
+    options:{ ...baseOpts, scales:{ ...baseOpts.scales, y:{ ...baseOpts.scales.y, min:0, max:45 } } }
   });
 
   // ── CHART: EAA ARRANGEMENT TYPES ────────────────────────────
@@ -8150,46 +6658,6 @@ ${body}
         y: { ...baseOpts.scales.y, stacked: true, min: 0, max: 65 }
       },
       plugins: { ...baseOpts.plugins, tooltip: { mode: 'index', intersect: false } }
-    }
-  });
-
-  // ── CHART: INTENDED DESTINATIONS 2025/26 ────────────────────
-  new Chart(document.getElementById('chartDest2526'), {
-    type: 'doughnut',
-    data: {
-      labels: ['College / Training Provider (92)', 'Sixth Form — other school (65)', 'Apprenticeship (22)', 'Undecided (21)', 'Other / Employment (5)'],
-      datasets: [{
-        data: [92, 65, 22, 21, 5],
-        backgroundColor: ['rgba(22,101,52,0.8)', 'rgba(30,95,168,0.8)', 'rgba(109,40,217,0.75)', 'rgba(100,116,139,0.55)', 'rgba(180,83,9,0.6)'],
-        borderWidth: 2, borderColor: '#fff'
-      }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: {
-        legend: { position: 'right', labels: { font: { size: 11 }, boxWidth: 12 } },
-        tooltip: { callbacks: { label: ctx => { const t = ctx.dataset.data.reduce((a,b)=>a+b,0); return ' ' + ctx.parsed + ' pupils (' + (ctx.parsed/t*100).toFixed(0) + '%)'; } } }
-      }
-    }
-  });
-
-  // ── CHART: INTENDED DESTINATIONS 2024/25 ────────────────────
-  new Chart(document.getElementById('chartDest2425'), {
-    type: 'doughnut',
-    data: {
-      labels: ['College / Training Provider (94)', 'Sixth Form — other school (75)', 'Apprenticeship (26)', 'Undecided (16)', 'Other / Employment (8)'],
-      datasets: [{
-        data: [94, 75, 26, 16, 8],
-        backgroundColor: ['rgba(22,101,52,0.8)', 'rgba(30,95,168,0.8)', 'rgba(109,40,217,0.75)', 'rgba(100,116,139,0.55)', 'rgba(180,83,9,0.6)'],
-        borderWidth: 2, borderColor: '#fff'
-      }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: {
-        legend: { position: 'right', labels: { font: { size: 11 }, boxWidth: 12 } },
-        tooltip: { callbacks: { label: ctx => { const t = ctx.dataset.data.reduce((a,b)=>a+b,0); return ' ' + ctx.parsed + ' pupils (' + (ctx.parsed/t*100).toFixed(0) + '%)'; } } }
-      }
     }
   });
 
@@ -8420,37 +6888,6 @@ ${body}
   // ── PD TAB: no charts needed ───────────────────────────────────
   // (Personal Development tab is pure HTML — no Chart.js required)
 
-  // CHART 5: THURROCK P8 BAR CHART
-  new Chart(document.getElementById('chartThrP8'), {
-    type:'bar',
-    data:{
-      labels:['Harris\nChafford','Grays\nConvent','Harris\nOckendon','Harris\nRiverside','Herringham','William\nEdwards','St Clere\'s','Hathaway','Gable Hall','Ormiston\nPark','Hassenbrook'],
-      datasets:[
-        {
-          label:'P8 Score 2023/24',
-          data:[1.04,0.76,0.46,0.23,0.07,-0.29,-0.34,-0.38,-0.51,-0.73,-0.76],
-          backgroundColor:['rgba(22,101,52,.75)','rgba(22,101,52,.75)','rgba(22,101,52,.75)','rgba(22,101,52,.75)','rgba(30,95,168,.85)','rgba(185,28,28,.65)','rgba(185,28,28,.65)','rgba(185,28,28,.65)','rgba(185,28,28,.65)','rgba(185,28,28,.65)','rgba(185,28,28,.65)'],
-          borderColor:[GREEN,GREEN,GREEN,GREEN,BLUE,RED,RED,RED,RED,RED,RED],
-          borderWidth:1.5, borderRadius:4
-        }
-      ]
-    },
-    options:{
-      ...baseOpts,
-      plugins:{
-        ...baseOpts.plugins,
-        legend:{ display:false },
-        annotation:{}
-      },
-      scales:{
-        x:{ ...baseOpts.scales.x, ticks:{ maxRotation:30, font:{ size:11 } } },
-        y:{
-          ...baseOpts.scales.y, min:-1.0, max:1.2,
-          ticks:{ callback:function(v){ return v > 0 ? '+'+v : v; } }
-        }
-      }
-    }
-  });
 </script>
 </body>
 </html>
